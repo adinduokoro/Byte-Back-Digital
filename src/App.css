@@ -5,29 +5,25 @@
   scroll-behavior: smooth;
 }
 
-
-:root{
+:root {
   /* -----CONSTANTS CONSTANTS CONSTANTS----- */
   /* COLORS */
-
+  --primaryColorGreen: #1dd48b;
+  --primaryContainerGreen: #adf2c7;
+  --primaryColorBlack: #000000;
 
   /* FONT */
-
+  --font: "Poppins", sans-serif;
 
   /* FONT WEIGHT */
-
+  --font-light: 200;
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-bold: 700;
 
   /* MISCELLANEOUS */
   /* -----CONSTANTS CONSTANTS CONSTANTS----- */
-
-
-
-
-
-
-
-
-
 
   /* -----4k TYPOGRAPHY----- */
   /* 4k FONT SIZE */
@@ -37,41 +33,33 @@
   /* 4k LETTER SPACING */
 }
 
-
-
-
-
-
-
-
-
-
-
 /* -----RESPONSIVE {4K} TYPOGRAPHY----- */
-.d-text {}
-.head-text {}
-.subHead-text {}
-.title-text {}
-.body-text {}
-.link-text {}
-.label-text {}
-
-
-
-
-
-
-
-
-
-
-body {
-  font-family: "";
+.d-text {
+}
+.head-text {
+}
+.subHead-text {
+}
+.title-text {
+}
+.body-text {
+}
+.link-text {
+}
+.label-text {
 }
 
-.section{}
+body {
+  font-family: var(--font);
+}
 
-a{text-decoration: none;}
+.section {
+}
 
-li {list-style: none;}
+a {
+  text-decoration: none;
+}
 
+li {
+  list-style: none;
+}
