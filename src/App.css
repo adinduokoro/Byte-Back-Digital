@@ -4,3 +4,74 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+
+
+:root{
+  /* -----CONSTANTS CONSTANTS CONSTANTS----- */
+  /* COLORS */
+
+
+  /* FONT */
+
+
+  /* FONT WEIGHT */
+
+
+  /* MISCELLANEOUS */
+  /* -----CONSTANTS CONSTANTS CONSTANTS----- */
+
+
+
+
+
+
+
+
+
+
+  /* -----4k TYPOGRAPHY----- */
+  /* 4k FONT SIZE */
+
+  /* 4k LINE HEIGHT */
+
+  /* 4k LETTER SPACING */
+}
+
+
+
+
+
+
+
+
+
+
+
+/* -----RESPONSIVE {4K} TYPOGRAPHY----- */
+.d-text {}
+.head-text {}
+.subHead-text {}
+.title-text {}
+.body-text {}
+.link-text {}
+.label-text {}
+
+
+
+
+
+
+
+
+
+
+body {
+  font-family: "";
+}
+
+.section{}
+
+a{text-decoration: none;}
+
+li {list-style: none;}
+
