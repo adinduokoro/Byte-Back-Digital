@@ -12,6 +12,8 @@
   --primaryContainerGreen: #adf2c7;
   --primaryColorBlack: #000000;
 
+  --text-color: white;
+
   /* FONT */
   --font: "Poppins", sans-serif;
 
@@ -27,30 +29,67 @@
 
   /* -----4k TYPOGRAPHY----- */
   /* 4k FONT SIZE */
+  --display-font: 3rem;
+  --heading-font: 2.25rem;
+  --subHeading-font: 1.5rem;
+  --title-font: 1.75rem;
+  --body-font: 1.125rem;
+  --link-font: 1.125rem;
+  --label-font: 0.875rem;
 
   /* 4k LINE HEIGHT */
-
-  /* 4k LETTER SPACING */
+  --display-l-height: 3.6rem;
+  --heading-l-height: normal;
+  --subHeading-l-height: normal;
+  --title-l-height: normal;
+  --body-l-height: 1.6875rem;
+  --link-l-height: normal;
+  --label-l-height: normal;
 }
 
 /* -----RESPONSIVE {4K} TYPOGRAPHY----- */
 .d-text {
+  font-size: var(--display-font);
+  font-weight: var(--font-bold);
+  line-height: var(--display-l-height);
 }
+
 .head-text {
+  font-size: var(--heading-font);
+  font-weight: var(--font-bold);
+  line-height: var(--heading-l-height);
 }
+
 .subHead-text {
+  font-size: var(--subHeading-font);
+  font-weight: var(--font-medium);
+  line-height: var(--subHeading-l-height);
 }
 .title-text {
+  font-size: var(--title-font);
+  font-weight: var(--font-bold);
+  line-height: var(--title-l-height);
 }
 .body-text {
+  font-size: var(--body-font);
+  font-weight: var(--font-normal);
+  line-height: var(--body-l-height);
 }
 .link-text {
+  font-size: var(--link-font);
+  font-weight: var(--font-medium);
+  line-height: var(--link-l-height);
 }
 .label-text {
+  font-size: var(--label-font);
+  font-weight: var(--font-normal);
+  line-height: var(--label-l-height);
 }
 
 body {
   font-family: var(--font);
+  background-color: var(--primaryColorBlack);
+  color: var(--text-color);
 }
 
 .section {
@@ -63,3 +102,130 @@ a {
 li {
   list-style: none;
 }
+
+/* FOR DESKTOP DEVICES */
+@media screen and (max-width: 1200px) {
+  :root {
+    /* -----DESKTOP TYPOGRAPHY----- */
+    /* DESKTOP FONT SIZE */
+    --display-font: 2.625rem;
+    --heading-font: 2rem;
+    --subHeading-font: 1.375rem;
+    --title-font: 1.5rem;
+    --body-font: 1rem;
+    --link-font: 1.125rem;
+    --label-font: 0.75rem;
+
+    /* DESKTOP LINE HEIGHT */
+    --display-l-height: 3.15rem;
+    --heading-l-height: normal;
+    --subHeading-l-height: normal;
+    --title-l-height: normal;
+    --body-l-height: 1.15rem;
+    --link-l-height: normal;
+    --label-l-height: normal;
+  }
+
+  /* -----RESPONSIVE {DESKTOP} TYPOGRAPHY----- */
+  .d-text {
+    font-size: var(--display-font);
+    font-weight: var(--font-bold);
+    line-height: var(--display-l-height);
+  }
+
+  .head-text {
+    font-size: var(--heading-font);
+    font-weight: var(--font-bold);
+    line-height: var(--heading-l-height);
+  }
+
+  .subHead-text {
+    font-size: var(--subHeading-font);
+    font-weight: var(--font-medium);
+    line-height: var(--subHeading-l-height);
+  }
+  .title-text {
+    font-size: var(--title-font);
+    font-weight: var(--font-bold);
+    line-height: var(--title-l-height);
+  }
+  .body-text {
+    font-size: var(--body-font);
+    font-weight: var(--font-normal);
+    line-height: var(--body-l-height);
+  }
+  .link-text {
+    font-size: var(--link-font);
+    font-weight: var(--font-medium);
+    line-height: var(--link-l-height);
+  }
+  .label-text {
+    font-size: var(--label-font);
+    font-weight: var(--font-normal);
+    line-height: var(--label-l-height);
+  }
+}
+
+/* FOR TABLET DEVICES */
+@media screen and (max-width: 900px) {
+  :root {
+    /* -----TABLET TYPOGRAPHY----- */
+    /* TABLET FONT SIZE */
+    --display-font: 2.625rem;
+    --heading-font: 2rem;
+    --subHeading-font: 1.375rem;
+    --title-font: 1.5rem;
+    --body-font: 1rem;
+    --link-font: 1.125rem;
+    --label-font: 0.75rem;
+
+    /* TABLET LINE HEIGHT */
+    --display-l-height: 3.15rem;
+    --heading-l-height: normal;
+    --subHeading-l-height: normal;
+    --title-l-height: normal;
+    --body-l-height: 1.15rem;
+    --link-l-height: normal;
+    --label-l-height: normal;
+  }
+
+  /* -----RESPONSIVE {TABLET} TYPOGRAPHY----- */
+  .d-text {
+    font-size: var(--display-font);
+    font-weight: var(--font-bold);
+    line-height: var(--display-l-height);
+  }
+
+  .head-text {
+    font-size: var(--heading-font);
+    font-weight: var(--font-bold);
+    line-height: var(--heading-l-height);
+  }
+
+  .subHead-text {
+    font-size: var(--subHeading-font);
+    font-weight: var(--font-medium);
+    line-height: var(--subHeading-l-height);
+  }
+  .title-text {
+    font-size: var(--title-font);
+    font-weight: var(--font-bold);
+    line-height: var(--title-l-height);
+  }
+  .body-text {
+    font-size: var(--body-font);
+    font-weight: var(--font-normal);
+    line-height: var(--body-l-height);
+  }
+  .link-text {
+    font-size: var(--link-font);
+    font-weight: var(--font-medium);
+    line-height: var(--link-l-height);
+  }
+  .label-text {
+    font-size: var(--label-font);
+    font-weight: var(--font-normal);
+    line-height: var(--label-l-height);
+  }
+}
+
