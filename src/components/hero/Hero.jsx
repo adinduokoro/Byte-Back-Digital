@@ -1,14 +1,18 @@
 import React from "react";
 import styles from "./Hero.module.css";
-import bgi1 from "../../assets/background-img1.png";
-import bgi2 from "../../assets/background-img2.png";
+import bg1 from "../../assets/background-img1.png";
+import bg2 from "../../assets/background-img2.png";
 
 const Hero = () => {
   return (
     <section className={styles.hero}>
       <div className={styles.background}>
-        <img className="test1" src={bgi1} alt="" />
-        <img className="test2" src={bgi2} alt="" />
+        <div className={styles.left}>
+            <img className={styles.bg1} src={bg1} alt="" />
+        </div>
+        <div className={styles.right}>
+        <img className={styles.bg2} src={bg2} alt="" />
+        </div>
       </div>
     </section>
   );
