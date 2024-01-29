@@ -24,6 +24,10 @@
   --font-semi-bold: 600;
   --font-bold: 700;
 
+  /* MARGIN */
+  --space-05: 0.3125rem;
+  --space-50: 3.125rem;
+
   /* MISCELLANEOUS */
   /* -----CONSTANTS CONSTANTS CONSTANTS----- */
 
@@ -93,7 +97,9 @@ body {
   color: var(--text-color);
 }
 
-.section {
+section{
+max-width: 75rem;
+margin: 0 auto;
 }
 
 a {

@@ -1,0 +1,42 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 6.25rem;
+  white-space: nowrap;
+}
+
+.logo {
+  width: 6rem;
+  height: 3.125rem;
+  cursor: pointer;
+}
+
+.navlinks {
+  display: flex;
+  gap: var(--space-50);
+}
+
+.navlink {
+  cursor: pointer;
+}
+
+.plusIcon {
+  margin-left: var(--space-05);
+}
+
+.menuToggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3.125rem;
+  height: 3.125rem;
+  border-radius: 3.125rem;
+  background: var(--primaryColorGreen);
+  cursor: pointer;
+}
+
+.toggle {
+  width: 1.5rem;
+  height: 1.5rem;
+}
