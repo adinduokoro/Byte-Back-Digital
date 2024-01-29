@@ -2,13 +2,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 6.25rem;
-  white-space: nowrap;
+  height: 9.765625vh;
 }
 
 .logo {
   width: 6rem;
-  height: 3.125rem;
+  height: var(--space-50);
   cursor: pointer;
 }
 
@@ -19,9 +18,11 @@
 
 .navlink {
   cursor: pointer;
+  white-space: nowrap;
+
 }
 
-.plusIcon {
+.dropdown {
   margin-left: var(--space-05);
 }
 
@@ -29,8 +30,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 3.125rem;
-  height: 3.125rem;
+  width: var(--space-50);
+  height: var(--space-50);
   border-radius: 3.125rem;
   background: var(--primaryColorGreen);
   cursor: pointer;
