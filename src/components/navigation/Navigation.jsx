@@ -20,7 +20,7 @@ const Navigation = () => {
         <li className={`${styles.navlink} link-text`}>Contact</li>
       </ul>
       <div className={styles.menuToggle}>
-        <img classNam={styles.toggle} src={menuToggle} alt="menu" />
+        <img className={styles.toggle} src={menuToggle} alt="menu" />
       </div>
     </section>
   )

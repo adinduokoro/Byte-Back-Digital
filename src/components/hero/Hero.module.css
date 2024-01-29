@@ -1,33 +1,47 @@
 .hero {
-    border: 1px solid green;
     height: 90.234375vh;
 }
 
 .background{
-    border: 1px solid pink;
-    width: 100%;
     height: 100%;
     gap: 1.5rem;
     display: flex;
+    overflow: hidden;
 }
 
 .left, .right{
-    border: 1px solid pink;
-    width: 100%;
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.left{
+  margin-top: 9rem;
+}
+
+.right{
+  margin-top: 5.25rem;
+}
+
+.bg1, .bg2{
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height:   100%;
 }
 
 .bg1{
-    position: absolute;
-    bottom: 0;
-    overflow: hidden;
+  bottom: 0;
 }
 
 .bg2{
-    position: absolute;
-    bottom: 0;
-    overflow: hidden;
-
+  bottom: 7.5rem;
 }
+
+
+
+
 
 
 
