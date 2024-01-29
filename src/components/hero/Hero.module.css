@@ -28,11 +28,18 @@
   position: absolute;
   object-fit: cover;
   width: 100%;
-  height:   100%;
+  height: 100%;
+  
 }
 
 .bg1{
   bottom: 0;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+            url('../../assets/background-img1.png');
+background-position: -766.496px -71px;
+background-size: 319.393% 109.103%;
+background-repeat: no-repeat;
+background-color: lightgray;
 }
 
 .bg2{
