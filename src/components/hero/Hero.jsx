@@ -2,11 +2,13 @@ import React from "react";
 import styles from "./Hero.module.css";
 import bgi1 from "../../assets/bgi1.png";
 import bgi2 from "../../assets/bgi2.png";
-import heroBanner from "../../assets/heroBanner.png";
+import bannerText from "../../assets/company.png";
 
 const Hero = () => {
   return (
     <section className={styles.hero}>
+      <div></div>
+      <div></div>
       <div className={styles.heroLogo}>
         <div className={styles.heroText} style={{ paddingLeft: "0rem" }}>
           WEB
@@ -19,7 +21,7 @@ const Hero = () => {
         </div>
         <div className={styles.heroAsset}>
           <div className={styles.banner}>
-            <img src={heroBanner} alt=""/>
+            <img className={styles.bannerText} src={bannerText} alt="" />
           </div>
           <div className={styles.heroText}>N</div>
         </div>
