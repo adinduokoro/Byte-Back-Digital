@@ -8,7 +8,11 @@
     gap: 1.5rem;
     display: flex;
     overflow: hidden;
-    min-height: 57.75rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border: 1px solid green;
 }
 
 .left, .right{
@@ -43,9 +47,15 @@
 }
 
 .hero-logo{
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   position: absolute;
+  z-index: 100;
   border: 1px solid green;
-  top: 0;
+  min-width: 53.6525974025974rem;
+height: 64.55078125vh;
+
 }
 
 

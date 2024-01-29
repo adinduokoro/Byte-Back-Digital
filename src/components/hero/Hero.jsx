@@ -7,15 +7,13 @@ const Hero = () => {
   return (
     <section className={styles.hero}>
       <div className={styles.background}>
+        <div className={styles["hero-logo"]}>logo</div>
         <div className={styles.left}>
           <img className={styles.bg1} src={bg1} alt="" />
         </div>
         <div className={styles.right}>
           <img className={styles.bg2} src={bg2} alt="" />
         </div>
-      </div>
-      <div className={styles["hero-logo"]}>
-        logo
       </div>
     </section>
   );
