@@ -14,6 +14,9 @@ const Hero = () => {
           <img className={styles.bg2} src={bg2} alt="" />
         </div>
       </div>
+      <div className={styles["hero-logo"]}>
+        logo
+      </div>
     </section>
   );
 };

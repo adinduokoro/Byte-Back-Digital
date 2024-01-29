@@ -1,5 +1,6 @@
 .hero {
     height: 90.234375vh;
+    position: relative;
 }
 
 .background{
@@ -7,6 +8,7 @@
     gap: 1.5rem;
     display: flex;
     overflow: hidden;
+    min-height: 57.75rem;
 }
 
 .left, .right{
@@ -34,16 +36,16 @@
 
 .bg1{
   bottom: 0;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
-            url('../../assets/background-img1.png');
-background-position: -766.496px -71px;
-background-size: 319.393% 109.103%;
-background-repeat: no-repeat;
-background-color: lightgray;
 }
 
 .bg2{
   bottom: 7.5rem;
+}
+
+.hero-logo{
+  position: absolute;
+  border: 1px solid green;
+  top: 0;
 }
 
 
