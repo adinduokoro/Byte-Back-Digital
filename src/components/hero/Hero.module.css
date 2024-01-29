@@ -1,0 +1,13 @@
+.hero {
+    border: 1px solid green;
+    height: 90.234375vh;
+}
+
+.background{
+    position: relative;
+    border: 1px solid yellow;
+    width: 100%;
+    height: 100%;
+}
+
+
