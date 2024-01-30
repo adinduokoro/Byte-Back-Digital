@@ -7,7 +7,17 @@ const Hero = () => {
   return (
     <section className={styles.hero}>
       <div className={styles["hero-content"]}>
-        <div className={styles["hero-logo"]}>logo</div>
+        <div className={styles["hero-logo"]}>
+          <div className={styles.text} style={{marginLeft: "0"}}>WEB</div>
+          <div className={styles.text} style={{marginLeft: "8.69rem"}}>DE</div>
+          <div className={styles.text} style={{marginLeft: "16.06rem"}}>SIG</div>
+          <div className={styles["text-content"]}>
+            <div className={styles.bar}>
+                <div className={styles.tag}>COMPANY</div>
+            </div>
+            <div className={styles.text} >N</div>
+          </div>
+        </div>
         <div className={styles.left}>
           <img className={styles.bg1} src={bg1} alt="" />
         </div>
