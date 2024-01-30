@@ -6,7 +6,7 @@ import bg2 from "../../assets/background-img2.png";
 const Hero = () => {
   return (
     <section className={styles.hero}>
-      <div className={styles.background}>
+      <div className={styles["hero-content"]}>
         <div className={styles["hero-logo"]}>logo</div>
         <div className={styles.left}>
           <img className={styles.bg1} src={bg1} alt="" />

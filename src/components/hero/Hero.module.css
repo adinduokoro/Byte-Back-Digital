@@ -3,8 +3,8 @@
     position: relative;
 }
 
-.background{
-    height: 100%;
+.hero-content{
+    height: 57.75rem;
     gap: 1.5rem;
     display: flex;
     overflow: hidden;
@@ -53,8 +53,8 @@
   position: absolute;
   z-index: 100;
   border: 1px solid green;
-  min-width: 53.6525974025974rem;
-height: 64.55078125vh;
+  width: 41.0625rem;
+height: 41.3125rem;
 
 }
 
