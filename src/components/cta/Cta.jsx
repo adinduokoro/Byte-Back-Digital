@@ -6,7 +6,7 @@ const Cta = () => {
   return (
     <section className={styles.cta}>
       <div className={styles["cta-left"]}>
-        <img src={ctaImage} alt="" />
+        <img className={styles.ctaImage} src={ctaImage} alt="" />
       </div>
       <div className={styles["cta-right"]}>
         <div className={`${styles.subHeading} subHead-text`}>
