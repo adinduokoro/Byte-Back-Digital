@@ -6,14 +6,14 @@ const Cta = () => {
   return (
     <section className={styles.cta}>
       <div className={styles["cta-left"]}>
-        <img src={ctaImage} alt="" />
+        <img className={styles.ctaImage} src={ctaImage} alt="" />
       </div>
       <div className={styles["cta-right"]}>
         <div className={`${styles.subHeading} subHead-text`}>
           {/* icon */}
           Our Company
         </div>
-        <div className={`${styles.heading} head-text`}>
+        <div className={`${styles.heading} d-text`}>
           Where Your Vision Becomes Our Code
         </div>
         <div className={`${styles.description} body-text`}>

@@ -1,9 +1,41 @@
-.cta{
-    border: 1px solid green;
-    height: 90.234375vh;
-    
+.cta {
+  border: 1px solid green;
+  height: 90.234375vh;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
 }
 
-.cta-left{}
+.ctaImage {
+  width: 30rem;
+  height: 22.75rem;
+}
 
-.cta-right{}
+
+.cta-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 43.125rem;
+}
+
+.subHeading{
+  margin-bottom: 0.94rem;
+  padding-left: 2.5rem;
+}
+
+.heading{
+  margin-bottom: 1.87rem;
+}
+
+.description{
+  margin-bottom: 0.94rem;
+  padding-left: 3.75rem;
+
+
+}
+
+.label{
+  padding-left: 3.75rem;
+  text-decoration: underline;
+}
