@@ -1,4 +1,7 @@
-.cta{}
+.cta{
+    border: 1px solid green;
+    height: 64rem;
+}
 
 .cta-left{}
 
