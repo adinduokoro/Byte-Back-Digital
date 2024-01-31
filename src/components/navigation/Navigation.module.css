@@ -11,15 +11,14 @@
   cursor: pointer;
 }
 
-.navlinks {
+.navLinks {
   display: flex;
   gap: var(--space-50);
 }
 
-.navlink {
+.navLink {
   cursor: pointer;
   white-space: nowrap;
-
 }
 
 .dropdown {

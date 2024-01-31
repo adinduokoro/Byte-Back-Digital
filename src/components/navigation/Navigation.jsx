@@ -9,15 +9,15 @@ const Navigation = () => {
   return (
     <section className={styles.navigation}>
       <img className={styles.logo} src={logo} alt="logo" />
-      <ul className={styles.navlinks}>
-        <li className={`${styles.navlink} link-text`}>Home</li>
-        <li className={`${styles.navlink} link-text`}>About Us</li>
-        <li className={`${styles.navlink} link-text`}>Portfolio</li>
-        <li className={`${styles.navlink} link-text`}>
+      <ul className={styles.navLinks}>
+        <li className={`${styles.navLink} link-text`}>Home</li>
+        <li className={`${styles.navLink} link-text`}>About Us</li>
+        <li className={`${styles.navLink} link-text`}>Portfolio</li>
+        <li className={`${styles.navLink} link-text`}>
           Services
-          <img className={styles.dropdown} src={plusIcon}/>
+          <img className={styles.dropdown} src={plusIcon} alt=''/>
         </li>
-        <li className={`${styles.navlink} link-text`}>Contact</li>
+        <li className={`${styles.navLink} link-text`}>Contact</li>
       </ul>
       <div className={styles.menuToggle}>
         <img className={styles.toggle} src={menuToggle} alt="menu" />

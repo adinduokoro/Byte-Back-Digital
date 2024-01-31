@@ -13,7 +13,7 @@ const Cta = () => {
           {/* icon */}
           Our Company
         </div>
-        <div className={`${styles.heading} head-text`}>
+        <div className={`${styles.heading} d-text`}>
           Where Your Vision Becomes Our Code
         </div>
         <div className={`${styles.description} body-text`}>
