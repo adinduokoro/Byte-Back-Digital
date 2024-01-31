@@ -108,6 +108,8 @@ body {
 section{
 max-width: 75rem;
 margin: 0 auto;
+height: 90.234375vh;
+max-height: 57.75rem;
 }
 
 a {
