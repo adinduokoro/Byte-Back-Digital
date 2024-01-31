@@ -22,6 +22,10 @@
 .subHeading{
   margin-bottom: 0.94rem;
   padding-left: 2.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.31rem;
+  color: var(--primaryColorGreen);
 }
 
 .heading{
@@ -31,6 +35,7 @@
 .description{
   margin-bottom: 0.94rem;
   padding-left: 3.75rem;
+  color: var(--text-color);
 
 
 }
@@ -38,4 +43,6 @@
 .label{
   padding-left: 3.75rem;
   text-decoration: underline;
+  color: var(--text-color);
+  cursor: pointer;
 }
