@@ -47,9 +47,12 @@
   border: 1px solid green;
   display: flex;
   height: 100%;
+  align-items: center;
+  gap: 1.44rem;
 }
 
 .left {
+  flex: 1;
 }
 
 .subHeading {
@@ -62,8 +65,63 @@
 }
 
 .heading {
-  margin-bottom: 1.87rem;
+  margin-bottom: 1.88rem;
+}
+
+.heading span {
+  color: var(--primaryColorGreen);
+font-size: 3rem;
+font-style: italic;
+font-weight: 500;
+line-height: 120%;
+}
+
+.offer-cards{
+
+}
+
+.card{
+  display: flex;
+  gap: 1.87rem;
+  margin-bottom: 0.94rem;
+
+}
+
+.card-index{
+  border-radius: 3.125rem;
+border: 1px solid white;
+  display: flex;
+width: 2.1875rem;
+height: 2.1875rem;
+justify-content: center;
+align-items: center;
+}
+
+.card-header{
+  font-weight: var(--font-medium) ;
+  margin-bottom: 0.94rem;
+}
+.card-body{
+  font-weight: var(--font-normal) ;
+  margin-bottom: 0.94rem;
+  color: var(--text-color);
+  width: 20rem;
+
+
+
+}
+
+.horizontal-rule{
+  width: 20rem;
+height: 0.0625rem;
+background: white;
 }
 
 
-.right {}
+.right {
+flex: 1;
+}
+
+.offerImage{
+  width: 100%;
+}

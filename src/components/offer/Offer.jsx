@@ -1,6 +1,8 @@
 import React from "react";
 import styles from "./Offer.module.css";
 import arrow from "../../assets/arrow-right.svg";
+import { cards } from "./data";
+import offerImage from "../../assets/offer-image.png";
 
 const Offer = () => {
   return (
@@ -23,13 +25,34 @@ const Offer = () => {
             What We Do
           </div>
           <div className={`${styles.heading} d-text`}>
-            Service That Makes Your Brand Stand Out and Grow
+            Service That Makes Your Brand <span>Stand Out</span> and Grow
           </div>
           <div className={styles["offer-cards"]}>
-            {/* create card */}
+            {cards.map((card, index) => {
+              return (
+                <div className={styles.card}>
+                  <div className={`${styles["card-index"]} body-text`}>
+                    {index + 1}
+                  </div>
+                  <div className={styles["card-content"]}>
+                    <div className={`${styles["card-header"]} title-text`}>
+                      {card.header}
+                    </div>
+                    <div className={`${styles["card-body"]} body-text`}>
+                      {card.body}
+                    </div>
+          <div className={styles["horizontal-rule"]}></div>
+
+                  </div>
+                  
+                </div>
+              );
+            })}
           </div>
         </div>
-        <div className={styles.right}>img</div>
+        <div className={styles.right}>
+          <img className={styles.offerImage} src={offerImage} alt="" />
+        </div>
       </div>
     </section>
   );
