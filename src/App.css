@@ -11,9 +11,9 @@
   --primaryColorGreen: #1dd48b;
   --primaryContainerGreen: #adf2c7;
   --primaryColorBlack: #000000;
-  --primaryColorWhite: #FCF7F5;
+  --primaryColorWhite: #fcf7f5;
 
-  --text-color: #BFBFBF;
+  --text-color: #bfbfbf;
 
   /* FONT */
   --font: "Poppins", sans-serif;
@@ -29,14 +29,10 @@
   --space-05: 0.3125rem;
   --space-50: 3.125rem;
 
-
-
   /* MISCELLANEOUS */
   --marquee-text-color: #bfbfbf28;
   /* -----CONSTANTS CONSTANTS CONSTANTS----- */
 
-
-  
   /* FOR 4K DEVICES */
   /* -----4k TYPOGRAPHY----- */
   /* 4k FONT SIZE */
@@ -103,14 +99,14 @@ body {
   color: var(--primaryColorWhite);
 }
 
-.App{
+.App {
 }
 
-section{
-max-width: 75rem;
-margin: 0 auto;
-height: 90.234375vh;
-max-height: 57.75rem;
+section {
+  max-width: 75rem;
+  margin: 0 auto;
+  height: 90.234375vh;
+  max-height: 57.75rem;
 }
 
 a {
@@ -309,4 +305,3 @@ li {
     line-height: var(--label-l-height);
   }
 }
-

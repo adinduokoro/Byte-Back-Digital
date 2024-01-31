@@ -25,9 +25,6 @@
   animation: move-right 24000ms linear infinite;
 }
 
-
-
-
 @keyframes move-right {
   0% {
     transform: translateX(0%);
@@ -44,7 +41,6 @@
 }
 
 .offer-content {
-  border: 1px solid green;
   display: flex;
   height: 100%;
   align-items: center;
@@ -70,58 +66,52 @@
 
 .heading span {
   color: var(--primaryColorGreen);
-font-size: 3rem;
-font-style: italic;
-font-weight: 500;
-line-height: 120%;
+  font-size: 3rem;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 120%;
 }
 
-.offer-cards{
-
+.offer-cards {
 }
 
-.card{
+.card {
   display: flex;
   gap: 1.87rem;
   margin-bottom: 0.94rem;
-
 }
 
-.card-index{
+.card-index {
   border-radius: 3.125rem;
-border: 1px solid white;
+  border: 1px solid white;
   display: flex;
-width: 2.1875rem;
-height: 2.1875rem;
-justify-content: center;
-align-items: center;
+  width: 2.1875rem;
+  height: 2.1875rem;
+  justify-content: center;
+  align-items: center;
 }
 
-.card-header{
-  font-weight: var(--font-medium) ;
+.card-header {
+  font-weight: var(--font-medium);
   margin-bottom: 0.94rem;
 }
-.card-body{
-  font-weight: var(--font-normal) ;
+.card-body {
+  font-weight: var(--font-normal);
   margin-bottom: 0.94rem;
   color: var(--text-color);
   width: 20rem;
-
-
-
 }
 
-.horizontal-rule{
+.horizontal-rule {
   width: 20rem;
-height: 0.0625rem;
-background: white;
+  height: 0.0625rem;
+  background: white;
 }
-
 
 .right {
-flex: 1;
+  flex: 1;
 }
 
-.offerImage{
+.offerImage {
   width: 100%;
 }

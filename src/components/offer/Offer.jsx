@@ -41,10 +41,8 @@ const Offer = () => {
                     <div className={`${styles["card-body"]} body-text`}>
                       {card.body}
                     </div>
-          <div className={styles["horizontal-rule"]}></div>
-
+                    <div className={styles["horizontal-rule"]}></div>
                   </div>
-                  
                 </div>
               );
             })}
