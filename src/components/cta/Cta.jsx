@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Cta.module.css";
 import ctaImage from "../../assets/cta-img.png";
+import arrow from "../../assets/arrow-right.svg"
 
 const Cta = () => {
   return (
@@ -10,7 +11,7 @@ const Cta = () => {
       </div>
       <div className={styles["cta-right"]}>
         <div className={`${styles.subHeading} subHead-text`}>
-          {/* icon */}
+          <img className={styles.icon} src={arrow} alt="" />
           Our Company
         </div>
         <div className={`${styles.heading} d-text`}>

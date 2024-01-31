@@ -13,7 +13,7 @@
   --primaryColorBlack: #000000;
   --primaryColorWhite: #FCF7F5;
 
-  --text-color: white;
+  --text-color: #BFBFBF;
 
   /* FONT */
   --font: "Poppins", sans-serif;
@@ -99,7 +99,7 @@
 body {
   font-family: var(--font);
   background-color: var(--primaryColorBlack);
-  color: var(--text-color);
+  color: var(--primaryColorWhite);
 }
 
 section{
