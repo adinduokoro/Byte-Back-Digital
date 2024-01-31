@@ -1,16 +1,16 @@
 .cta {
-  border: 1px solid green;
   height: 90.234375vh;
   display: flex;
   align-items: center;
   gap: 1.5rem;
+  max-height: 57.75rem;
+  
 }
 
 .ctaImage {
   width: 30rem;
   height: 22.75rem;
 }
-
 
 .cta-right {
   display: flex;
@@ -19,7 +19,7 @@
   width: 43.125rem;
 }
 
-.subHeading{
+.subHeading {
   margin-bottom: 0.94rem;
   padding-left: 2.5rem;
   display: flex;
@@ -28,19 +28,17 @@
   color: var(--primaryColorGreen);
 }
 
-.heading{
+.heading {
   margin-bottom: 1.87rem;
 }
 
-.description{
+.description {
   margin-bottom: 0.94rem;
   padding-left: 3.75rem;
   color: var(--text-color);
-
-
 }
 
-.label{
+.label {
   padding-left: 3.75rem;
   text-decoration: underline;
   color: var(--text-color);

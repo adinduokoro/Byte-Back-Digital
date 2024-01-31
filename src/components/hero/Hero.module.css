@@ -1,6 +1,8 @@
 .hero {
   height: 90.234375vh;
   position: relative;
+  max-height: 57.75rem;
+
 }
 
 .hero-content {

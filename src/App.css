@@ -102,6 +102,9 @@ body {
   color: var(--primaryColorWhite);
 }
 
+.App{
+}
+
 section{
 max-width: 75rem;
 margin: 0 auto;

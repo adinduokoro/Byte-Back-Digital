@@ -3,7 +3,9 @@ import styles from "./Offer.module.css"
 
 const Offer = () => {
   return (
-    <section>Offer</section>
+    <section className={styles.offer}>
+      hello
+    </section>
   )
 }
 
