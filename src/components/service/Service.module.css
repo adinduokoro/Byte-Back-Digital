@@ -25,3 +25,30 @@
   margin-bottom: 4.37rem;
 
 }
+
+.badges {
+    display: flex;
+    height: 17.4375rem;
+    width: 58.4375rem;
+    justify-content: space-between;
+}
+
+.badge{
+    width: 15.3125rem;
+    height: 17.4375rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.badgeImage {
+    object-fit: contain;
+    margin-bottom: 1.875rem;
+
+}
+
+.badge-title{
+    font-weight: var(--font-medium);
+    text-align: center;
+}

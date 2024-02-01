@@ -20,7 +20,7 @@ const Service = () => {
           return (
             <div className={styles.badge} key={index}>
               <img className={styles.badgeImage} src={badge.image} alt="" />
-              <div className={styles["badge-title"]}>{badge.topic}</div>
+              <div className={`${styles["badge-title"]} title-text`}>{badge.topic}</div>
             </div>
           );
         })}
