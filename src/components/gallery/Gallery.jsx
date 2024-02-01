@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Gallery.module.css";
 import arrow from "../../assets/arrow-right.svg";
+import { projects } from "./data";
 
 const Gallery = () => {
   return (
@@ -17,9 +18,8 @@ const Gallery = () => {
           View More Projects
         </button>
       </div>
-      <div className={styles.gallery}>
-        gallery pics
-      </div>
+
+      <div className={styles.gallery}>gallery pics, need to learn grid</div>
     </section>
   );
 };
