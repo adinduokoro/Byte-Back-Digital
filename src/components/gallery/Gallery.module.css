@@ -1,11 +1,6 @@
 .gallery {
   min-height: 115.5rem !important;
-}
-
-.header-content {
   display: flex;
-  justify-content: space-between;
-  border: 1px solid green;
   flex-direction: column;
 }
 
