@@ -4,9 +4,6 @@
   flex-direction: column;
 }
 
-.left {
-}
-
 .subHeading {
   margin-bottom: 0.94rem;
   padding-left: 2.5rem;
@@ -27,8 +24,3 @@
   width: 41.6875rem;
 }
 
-.right {
-}
-
-.gallery {
-}
