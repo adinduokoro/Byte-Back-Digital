@@ -1,3 +1,39 @@
-.gallery{
-    border: 1px solid pink;
+.gallery {
+  min-height: 115.5rem !important;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid green;
+  flex-direction: column;
+}
+
+.left {
+}
+
+.subHeading {
+  margin-bottom: 0.94rem;
+  padding-left: 2.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.31rem;
+  color: var(--primaryColorGreen);
+}
+
+.heading-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+}
+
+.heading {
+  display: flex;
+  width: 41.6875rem;
+}
+
+.right {
+}
+
+.gallery {
 }

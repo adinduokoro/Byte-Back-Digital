@@ -79,7 +79,7 @@
 .card {
   display: flex;
   gap: 1.87rem;
-  margin-bottom: 0.94rem;
+  margin-bottom: 1.88rem;
 }
 
 .card-index {
@@ -100,11 +100,11 @@
   font-weight: var(--font-normal);
   margin-bottom: 0.94rem;
   color: var(--text-color);
-  width: 20rem;
+  width: 22rem;
 }
 
 .horizontal-rule {
-  width: 20rem;
+  width: 22rem;
   height: 0.0625rem;
   background: white;
 }

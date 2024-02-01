@@ -105,8 +105,22 @@ body {
 section {
   max-width: 75rem;
   margin: 0 auto;
-  height: 90.234375vh;
   min-height: 57.75rem;
+}
+
+button {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: 2px solid var(--primaryColorGreen);
+  cursor: pointer;
+  background: none;
+  display: inline-flex;
+  padding: 0.75rem 1.875rem;
+  color: white;
+  white-space: nowrap;
+  height: 100%;
+
 }
 
 a {
