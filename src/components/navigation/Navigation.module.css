@@ -2,8 +2,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 9.765625vh;
-  max-height: 6.25rem;
+  height: 9.765625vh !important;
+  min-height: 6.25rem !important;
 
 }
 

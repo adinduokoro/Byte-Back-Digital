@@ -30,7 +30,7 @@ const Offer = () => {
           <div className={styles["offer-cards"]}>
             {cards.map((card, index) => {
               return (
-                <div className={styles.card}>
+                <div className={styles.card} key={index}>
                   <div className={`${styles["card-index"]} body-text`}>
                     {index + 1}
                   </div>

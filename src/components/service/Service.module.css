@@ -1,0 +1,11 @@
+.subHeading {
+  margin-bottom: 0.94rem;
+  display: flex;
+  align-items: center;
+  gap: 0.31rem;
+  color: var(--primaryColorGreen);
+}
+
+.heading {
+  margin-bottom: 1.87rem;
+}
