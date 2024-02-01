@@ -9,10 +9,10 @@ const Service = () => {
       <div className={styles.header}>
         <div className={`${styles.subHeading} subHead-text`}>
           <img className={styles.icon} src={arrow} alt="" />
-          Our Company
+          Popular Services
         </div>
         <div className={`${styles.heading} d-text`}>
-          Where Your Vision Becomes Our Code
+          Crafting Outstanding Web Design Solutions
         </div>
       </div>
       <div className={styles.badges}>
