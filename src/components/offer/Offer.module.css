@@ -37,7 +37,7 @@
 .marquee-text span {
   color: var(--primaryColorBlack);
   font-size: 9.375rem;
-  -webkit-text-stroke: 2px var(--text-color);
+  -webkit-text-stroke: 3px var(--marquee-text-color);
 }
 
 .offer-content {
@@ -103,7 +103,7 @@
 .horizontal-rule {
   width: 22rem;
   height: 0.0625rem;
-  background: white;
+  background: var(--marquee-text-color);
 }
 
 .right {

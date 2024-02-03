@@ -30,7 +30,7 @@
   --space-50: 3.125rem;
 
   /* MISCELLANEOUS */
-  --marquee-text-color: #bfbfbf28;
+  --marquee-text-color: #3b3b3b;
   /* -----CONSTANTS CONSTANTS CONSTANTS----- */
 
   /* FOR 4K DEVICES */
@@ -97,9 +97,6 @@ body {
   font-family: var(--font);
   background-color: var(--primaryColorBlack);
   color: var(--primaryColorWhite);
-}
-
-.App {
 }
 
 section {

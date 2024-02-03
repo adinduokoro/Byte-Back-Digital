@@ -75,4 +75,5 @@
 .title img{
   width: 1.4375rem;
   height: 1.4375rem;
+  cursor: pointer;
 }

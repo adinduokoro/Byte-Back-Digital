@@ -1,3 +1,44 @@
-.testimonial{
-    border: 1px solid pink;
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid pink;
+}
+
+.marquee {
+  width: 100%;
+  min-height: 11.55rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+  border: 1px solid pink;
+
+}
+
+.marquee-text {
+  color: var(--marquee-text-color);
+  -webkit-text-stroke-width: 2;
+  -webkit-text-stroke-color: var(--marquee-text-color);
+  font-size: 9.375rem;
+  font-weight: var(--font-bold);
+  text-transform: uppercase;
+  white-space: nowrap;
+  letter-spacing: 1px;
+  padding-left: 50rem;
+  animation: move-right 24000ms linear infinite;
+}
+
+@keyframes move-right {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.marquee-text span {
+  color: var(--primaryColorBlack);
+  font-size: 9.375rem;
+  -webkit-text-stroke: 3px var(--marquee-text-color);
 }
