@@ -46,7 +46,6 @@
 }
 
 .testimonial-content {
-  border: 1px solid pink;
   display: flex;
   align-items: center;
   gap: 5rem;
@@ -55,6 +54,7 @@
 
 .left {
   padding-top: 1.5rem;
+  border: 1px solid pink;
 }
 
 .review {
@@ -62,6 +62,7 @@
   flex-direction: column;
   gap: 1.88rem;
   margin-bottom: 4.38rem;
+  max-width: 30.375rem;
 }
 
 .info {
