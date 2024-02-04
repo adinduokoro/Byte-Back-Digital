@@ -2,30 +2,44 @@
   display: flex;
   flex-direction: column;
   border: 1px solid pink;
+  justify-content: center;
 }
 
+ 
 .marquee {
-  width: 100%;
-  min-height: 11.55rem;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  overflow: hidden;
   border: 1px solid pink;
+  width: 100%;
+height: 13.9375rem;
 
+display: flex;
+justify-content: flex-start;
+align-items: center;
+overflow: hidden;
+}
+
+.marquee-text{
+  white-space: nowrap;
+  color: var(--marquee-text-color);
+  -webkit-text-stroke-width: 2;
+-webkit-text-stroke-color: var(--text-color, #BFBFBF);
+font-size: 9.375rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+font-weight: var(--font-bold);
+text-transform: uppercase;
+letter-spacing: 1px;
+padding-left: 25rem;
 }
 
 .marquee-text {
-  color: var(--marquee-text-color);
-  -webkit-text-stroke-width: 2;
-  -webkit-text-stroke-color: var(--marquee-text-color);
+  animation: move-right 48000ms linear infinite;
+}
+
+.marquee-text span {
+  color: var(--primaryColorBlack);
   font-size: 9.375rem;
-  font-weight: var(--font-bold);
-  text-transform: uppercase;
-  white-space: nowrap;
-  letter-spacing: 1px;
-  padding-left: 50rem;
-  animation: move-right 24000ms linear infinite;
+  -webkit-text-stroke: 3px var(--marquee-text-color);
 }
 
 @keyframes move-right {
@@ -37,8 +51,70 @@
   }
 }
 
-.marquee-text span {
-  color: var(--primaryColorBlack);
-  font-size: 9.375rem;
-  -webkit-text-stroke: 3px var(--marquee-text-color);
+.testimonial-content{
+  border: 1px solid pink;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  gap: 5rem;
+  min-height: 46.1875rem;
+  max-width: 63.755rem;
+  margin: 0 auto;
 }
+
+.review{
+  display: flex;
+  flex-direction: column;
+  gap: 1.88rem;
+  margin-bottom: 4.38rem;
+  
+}
+
+.info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.name{
+  margin-bottom: 0.62rem;
+}
+
+.title{
+  margin-bottom: 1.25rem;
+}
+
+.right{
+  width: 25.5rem;
+height: 29.9375rem;
+}
+
+.client-pic{
+  object-fit: cover;
+}
+
+
+/*
+
+
+
+.left{
+  flex: 1;
+}
+
+
+
+.name{
+  font-weight: var(--font-medium);
+  white-space: nowrap;
+  
+}
+
+.title{
+  white-space: nowrap;
+  color: var(--text-color);
+}
+.right{
+  flex: 1;
+
+} */
