@@ -21,7 +21,7 @@
   text-transform: uppercase;
   white-space: nowrap;
   letter-spacing: 1px;
-  padding-left: 50rem;
+  padding-left: 35rem;
   animation: move-right 24000ms linear infinite;
 }
 
