@@ -97,7 +97,6 @@ textarea {
 
 textarea::placeholder{
   font-family: "Poppins", sans-serif;
-  letter-spacing: 1px;
   color: var(--primaryColorWhite);
   opacity: 1;
 }
