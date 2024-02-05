@@ -1,6 +1,9 @@
 import React from "react";
 import styles from "./Testimonials.module.css";
 import clientPic from "../../assets/client-picture.png";
+import star from "../../assets/star-bold.svg";
+import leftBtn from "../../assets/left-vector.svg";
+import rightBtn from "../../assets/right-vector.svg";
 
 const Testimonial = () => {
   return (
@@ -19,7 +22,13 @@ const Testimonial = () => {
       <div className={styles["testimonial-content"]}>
         <div className={styles.left}>
           <div className={styles.review}>
-            <div className={styles.rating}> 5 stars</div>
+            <div className={styles.rating}>
+              <img className="start" src={star} alt="" />
+              <img className="start" src={star} alt="" />
+              <img className="start" src={star} alt="" />
+              <img className="start" src={star} alt="" />
+              <img className="start" src={star} alt="" />
+            </div>
             <div className={`${styles.feedback} subHead-text`}>
               Incredible custom design! The team's dedication, creativity, and
               attention to detail exceeded our expectations. Highly recommend
@@ -30,17 +39,13 @@ const Testimonial = () => {
             <div className={`${styles.name} title-text`}>Jane Doe</div>
             <div className={`${styles.title} body-text`}>CEO & Founder</div>
             <div className={styles["slide-controls"]}>
-              <div className={styles["left-button"]}></div>
-              <div className={styles.index}>
-                <div className={styles.index1}></div>
-                <div className={styles.index2}></div>
-                <div className={styles.index3}></div>
+              <img className={styles["left-button"]} src={rightBtn} alt="" />
+              <div className={styles.indexs}>
+                <div className={styles.index}></div>
+                <div className={styles.index}></div>
+                <div className={styles.index}></div>
               </div>
-              <div className={styles["right-button"]}>
-                <div className={styles["image-container"]}>
-                  <img src="" alt="" />
-                </div>
-              </div>
+              <img className={styles["right-button"]} src={leftBtn} alt="" />
             </div>
           </div>
         </div>

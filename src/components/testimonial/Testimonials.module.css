@@ -1,7 +1,6 @@
 .testimonial {
   display: flex;
   flex-direction: column;
-  border: 1px solid pink;
   justify-content: center;
 }
 
@@ -54,7 +53,6 @@
 
 .left {
   padding-top: 1.5rem;
-  border: 1px solid pink;
 }
 
 .review {
@@ -63,6 +61,19 @@
   gap: 1.88rem;
   margin-bottom: 4.38rem;
   max-width: 30.375rem;
+}
+
+.rating {
+  display: flex;
+  gap: 0.31rem;
+}
+
+.star {
+  width: 1.75rem;
+  height: 1.75rem;
+}
+
+.feedback {
 }
 
 .info {
@@ -77,6 +88,26 @@
 
 .title {
   margin-bottom: 1.25rem;
+  color: var(--text-color);
+}
+
+.slide-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.88rem;
+}
+
+.indexs {
+  display: flex;
+  gap: 0.62rem;
+}
+
+.index {
+  width: 0.78125rem;
+  height: 0.3125rem;
+  border-radius: 6.25rem;
+  background: var(--primaryColorGreen);
 }
 
 .right {
