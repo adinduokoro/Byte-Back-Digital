@@ -108,17 +108,21 @@ section {
 }
 
 button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   border: 2px solid var(--primaryColorGreen);
   cursor: pointer;
   background: none;
-  display: inline-flex;
-  padding: 0.75rem 1.875rem;
   color: white;
   white-space: nowrap;
-  height: 100%;
+  width: 14.375rem;
+  height: 3.1875rem;
+  font-weight: var(--font-bold) !important;
+
 }
 
 a {
@@ -127,6 +131,27 @@ a {
 
 li {
   list-style: none;
+}
+
+input{
+  box-sizing: border-box;
+  outline: none;
+  background: none;
+  border: none;
+
+}
+
+textarea {
+  box-sizing: border-box;
+  outline: none;
+  background: none;
+  border: none;
+  color: white;
+
+}
+
+textarea::placeholder{
+  color: white;
 }
 
 /* FOR DESKTOP DEVICES */

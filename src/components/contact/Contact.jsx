@@ -37,17 +37,43 @@ const Contact = () => {
       <div className={styles.right}>
         <form action="">
           <div className={styles["form-header"]}>
-            <div className={`${styles.subHeading} subHead-text`}>
+            <div className={`${styles["subHeading"]} subHead-text`}>
               <img className={styles.icon} src={arrow} alt="" />
               Contact Us
             </div>
-            <div className={`${styles.heading} d-text`}>Drop a Message</div>
+            <div
+              className={`${styles.heading} d-text`}
+              style={{ marginBottom: "1.87rem" }}
+            >
+              Drop a Message
+            </div>
           </div>
+          <label>
+            <div className="body-text">Full Name:</div>
+            <input className="body-text" maxLength={25} type="text" />
+          </label>
+          <label>
+            <div className="body-text">Phone:</div>
+            <input className="body-text" maxLength={16} type="number" />
+          </label>
+          <label>
+            <div className="body-text">Email:</div>
+            <input className="body-text" maxLength={50} type="email" />
+          </label>
 
-          <input type="text" />
-          <input type="text" />
-          <input type="text" />
-          <input type="text" />
+          <label>
+            <textarea
+            className="body-text"
+              type="email"
+              placeholder="Message:"
+              rows={4}
+              cols={40}
+              maxLength={200}
+            />
+          </label>
+          <button className={`${styles.button} link-text` }>
+            Send Message
+          </button>
         </form>
       </div>
     </section>

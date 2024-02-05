@@ -1,5 +1,4 @@
 .contact {
-  border: 1px solid green;
   display: flex;
   align-items: center;
   gap: 2.8rem;
@@ -60,14 +59,38 @@
 }
 
 .right {
+    background-color: var(--ruler-color);
 }
 
 form {
+    padding: 2.44rem 0;
   width: 31.875rem;
   height: 42.3125rem;
-  background-color: var(--ruler-color);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+label {
+  display: flex;
+  width: 23.8125rem;
+  padding: 0.625rem 0.3125rem;
+  align-items: center;
+  gap: 0.625rem;
+  margin-bottom: 1.88rem;
+  border-bottom: 1px solid var(--text-color);
+}
+
+label div {
+  white-space: nowrap;
+}
+
+input {
+  color: var(--primaryColorWhite);
+}
+
+.button{
+    background-color: var(--primaryColorGreen);
+    color: var(--primaryColorBlack);
 }
