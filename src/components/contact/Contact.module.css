@@ -90,6 +90,15 @@ input {
   color: var(--primaryColorWhite);
 }
 
+textarea {
+  resize: none;
+  font-family: "Poppins", sans-serif;
+}
+
+textarea::placeholder{
+  font-family: "Poppins", sans-serif;
+}
+
 .button{
     background-color: var(--primaryColorGreen);
     color: var(--primaryColorBlack);
