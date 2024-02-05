@@ -59,11 +59,12 @@
 }
 
 .right {
-    background-color: var(--ruler-color);
+  border-radius: 1.25rem;
+  background-color: var(--ruler-color);
 }
 
 form {
-    padding: 2.44rem 0;
+  padding: 2.44rem 0;
   width: 31.875rem;
   height: 42.3125rem;
   display: flex;
@@ -95,13 +96,13 @@ textarea {
   font-family: "Poppins", sans-serif;
 }
 
-textarea::placeholder{
+textarea::placeholder {
   font-family: "Poppins", sans-serif;
   color: var(--primaryColorWhite);
   opacity: 1;
 }
 
-.button{
-    background-color: var(--primaryColorGreen);
-    color: var(--primaryColorBlack);
+.button {
+  background-color: var(--primaryColorGreen);
+  color: var(--primaryColorBlack);
 }
