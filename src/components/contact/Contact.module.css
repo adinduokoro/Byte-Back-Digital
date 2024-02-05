@@ -1,3 +1,73 @@
 .contact {
-    border: 1px solid green;
+  border: 1px solid green;
+  display: flex;
+  align-items: center;
+  gap: 2.8rem;
+}
+
+.subHeading {
+  margin-bottom: 0.94rem;
+  padding-left: 2.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.31rem;
+  color: var(--primaryColorGreen);
+}
+
+.heading span {
+  color: var(--primaryColorGreen);
+  font-size: 3rem;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 120%;
+}
+
+.contacts {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 5.94rem;
+  gap: 1.5rem;
+}
+
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 13.0625rem;
+  margin-top: 4.37rem;
+}
+
+.contact-card img {
+  margin-bottom: 1.88rem;
+}
+
+.contact-type {
+  margin-bottom: 0.63rem;
+}
+
+.method {
+  font-weight: var(--font-medium);
+  color: var(--text-color);
+  text-align: center;
+}
+
+.method span {
+  font-weight: var(--font-bold);
+}
+
+.follow-us {
+  margin-bottom: 0.94rem;
+}
+
+.right {
+}
+
+form {
+  width: 31.875rem;
+  height: 42.3125rem;
+  background-color: var(--ruler-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
