@@ -40,10 +40,10 @@ const Testimonial = () => {
             <div className={`${styles.title} body-text`}>CEO & Founder</div>
             <div className={styles["slide-controls"]}>
               <img className={styles["left-button"]} src={rightBtn} alt="" />
-              <div className={styles.indexs}>
-                <div className={styles.index}></div>
-                <div className={styles.index}></div>
-                <div className={styles.index}></div>
+              <div className={styles.index}>
+                <div className={`${styles["point-active"]} ${styles.point}`}></div>
+                <div className={styles.point}></div>
+                <div className={styles.point}></div>
               </div>
               <img className={styles["right-button"]} src={leftBtn} alt="" />
             </div>
