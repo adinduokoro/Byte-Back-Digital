@@ -1,7 +1,78 @@
 footer {
-    background-color: var(--ruler-color);
+  background-color: var(--ruler-color);
 }
 
-.footer{
+.footer {
+    min-height: auto !important;
+}
 
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 12.4375rem;
+}
+
+.logo {
+  width: 15.9375rem;
+  height: 8.5rem;
+  cursor: pointer;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 3.62rem;
+}
+
+.social {
+  cursor: pointer;
+}
+
+.footer-bottom {
+  display: flex;
+  height: 38rem;
+  justify-content: center;
+}
+
+.footer-bottom-left {
+  width: 49.5rem;
+}
+
+.footer-bottom-right {
+  width: 25.5rem;
+
+}
+
+.footer-bottom-right-top{
+    height: 27.875rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3.75rem 0 3.6875rem 4.25rem;
+    border-bottom: 1px solid var(--text-color);
+    border-left: 1px solid var(--text-color);
+    
+}
+
+.footer-bottom-right-bottom {
+  height: 10.125rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 1px solid var(--text-color);
+}
+
+.footer-bottom-right-bottom p {
+  width: 15.5625rem;
+}
+
+.quick-link,
+.link {
+  margin-bottom: 1.88rem;
+}
+
+.footer-bottom-right-bottom span {
+  color: var(--primaryColorGreen);
+  font-weight: 700;
 }

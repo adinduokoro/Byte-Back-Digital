@@ -64,9 +64,9 @@
 }
 
 form {
-  padding: 2.44rem 0;
-  width: 31.875rem;
-  height: 42.3125rem;
+  padding: 2.44rem 3.94rem;
+  max-width: 31.875rem;
+  height: 43rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
