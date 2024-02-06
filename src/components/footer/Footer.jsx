@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Footer.module.css";
 import logo from "../../assets/logo.svg";
+import img from "../../assets/footer-img.png";
 
 const Footer = () => {
   return (
@@ -30,12 +31,17 @@ const Footer = () => {
         <div className={styles["footer-bottom"]}>
           <div className={styles["footer-bottom-left"]}>
             <div className={styles["footer-bottom-left-top"]}>
-              <>img & text</>
-              <>text</>
+              <p className={styles["footer-cta"]}>
+                <div className={styles["footer-img"]}>
+                  <img src={img} alt="" />
+                </div>
+                Let's Work
+              </p>
+              <p className={styles["footer-cta"]}>Together</p>
             </div>
             <div className={styles["footer-bottom-left-bottom"]}>
-              button 
-              button
+              <div className={`${styles.email} body-text`}>bytebackdigital@gmail.com</div>
+              <div className={`${styles.phone} body-text`}>+1 (800) 123 - 4567</div>
             </div>
           </div>
           <div className={styles["footer-bottom-right"]}>
@@ -54,8 +60,10 @@ const Footer = () => {
             <div
               className={`${styles["footer-bottom-right-bottom"]} label-text`}
             >
-              <p>Copyright @2023, <span>&nbsp;Byte Back Digital&nbsp;</span>{" "}  All Rights
-              Reserved</p>
+              <p>
+                Copyright @2023, <span>&nbsp;Byte Back Digital&nbsp;</span> All
+                Rights Reserved
+              </p>
             </div>
           </div>
         </div>
