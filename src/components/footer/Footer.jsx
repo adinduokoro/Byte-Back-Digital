@@ -28,7 +28,16 @@ const Footer = () => {
           </ul>
         </div>
         <div className={styles["footer-bottom"]}>
-          <div className={styles["footer-bottom-left"]}>hi</div>
+          <div className={styles["footer-bottom-left"]}>
+            <div className={styles["footer-bottom-left-top"]}>
+              <>img & text</>
+              <>text</>
+            </div>
+            <div className={styles["footer-bottom-left-bottom"]}>
+              button 
+              button
+            </div>
+          </div>
           <div className={styles["footer-bottom-right"]}>
             <div className={styles["footer-bottom-right-top"]}>
               <div className={`${styles["quick-link"]} title-text`}>
