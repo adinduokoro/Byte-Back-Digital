@@ -1,8 +1,21 @@
 .navigation {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   min-height: 6.25rem !important;
+  position: relative;
+  display: flex;
+  z-index: 50;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-container {
+  background: var(--primaryColorBlack);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  max-width: 75rem;
+  width: 100%;
+  height: 6.25rem;
 }
 
 .logo {
@@ -16,13 +29,20 @@
   gap: var(--space-50);
 }
 
-.navLink {
+.navLink a {
   cursor: pointer;
   white-space: nowrap;
+  transition: color 0.25s ease-in-out;
+  color: var(--primaryColorWhite);
+}
+
+.navLink a:hover {
+  color: var(--primaryColorGreen);
 }
 
 .dropdown {
   margin-left: var(--space-05);
+  transition: fill 0.25s ease-in-out;
 }
 
 .menuToggle {
