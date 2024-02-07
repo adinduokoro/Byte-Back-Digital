@@ -64,7 +64,6 @@
 .toggle-overlay{
   position: fixed;
   color: white;
-  border: 1px solid purple;
   top: 0;
   right: 0;
   width: 100vw;
@@ -72,6 +71,7 @@
   z-index: 25;
   background-color: black;
   opacity: .75;
+  display: none;
 }
 
 .toggle-menu{
@@ -79,10 +79,11 @@ position: fixed;
 top: 0;
 right: 0;
 z-index: 50;
-border: 1px solid yellow;
 height: 100vh;
 width: 30rem;
 background: var(--ruler-color);
+display: none;
+
 }
 
 .close-icon{

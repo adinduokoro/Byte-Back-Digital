@@ -13,6 +13,11 @@ const Navigation = () => {
     setIsOpen(!isOpen);
   };
 
+  const closeMenu = () => {
+    setIsOpen(false)
+    console.log(isOpen)
+  }
+
   return (
     <section className={styles.navigation}>
       <div className={styles["nav-container"]}>
@@ -24,7 +29,7 @@ const Navigation = () => {
             <Link to="/">Home</Link>
           </li>
           <li className={`${styles.navLink} link-text`}>
-            <Link>About Us</Link>
+            <Link>About</Link>
           </li>
           <li className={`${styles.navLink} link-text`}>
             <Link>Portfolio</Link>
@@ -40,9 +45,9 @@ const Navigation = () => {
           <img className={styles.toggle} src={menuToggle} alt="menu" />
         </div>
       </div>
-      <div className={styles["toggle-overlay"]}></div>
+      <div className={styles["toggle-overlay"]} onClick={closeMenu}></div>
       <div className={styles["toggle-menu"]}>
-        <Icon icon="fa:close" className={styles["close-icon"]} />
+        <Icon icon="fa:close" className={styles["close-icon"]} onClick={closeMenu}/>
         <div className={`${styles["nav-header"]} title-text`}>
           Book Appointment
         </div>
