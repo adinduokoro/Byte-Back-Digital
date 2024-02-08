@@ -14,9 +14,9 @@ const Navigation = () => {
   };
 
   const closeMenu = () => {
-    setIsOpen(false)
-    console.log(isOpen)
-  }
+    setIsOpen(false);
+    console.log(isOpen);
+  };
 
   return (
     <section className={styles.navigation}>
@@ -47,13 +47,38 @@ const Navigation = () => {
       </div>
       <div className={styles["toggle-overlay"]} onClick={closeMenu}></div>
       <div className={styles["toggle-menu"]}>
-        <Icon icon="fa:close" className={styles["close-icon"]} onClick={closeMenu}/>
+        <Icon
+          icon="fa:close"
+          className={styles["close-icon"]}
+          onClick={closeMenu}
+        />
+        <form action="">
+
         <div className={`${styles["nav-header"]} title-text`}>
           Book Appointment
         </div>
-
-
-        Email Message Submit Now Socials
+        <label>
+          <div className="body-text">Full Name:</div>
+          <input className="body-text" maxLength={25} type="text" />
+        </label>
+        <label>
+          <div className="body-text">Email:</div>
+          <input className="body-text" maxLength={25} type="email" />
+        </label>
+        <label>
+            <textarea
+            className="body-text"
+              type="message"
+              placeholder="Message:"
+              rows={4}
+              cols={40}
+              maxLength={200}
+            />
+          </label>
+          <button className={`${styles.button} link-text` }>
+            Send Message
+          </button>
+        </form>
       </div>
     </section>
   );
