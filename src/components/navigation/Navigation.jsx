@@ -11,11 +11,11 @@ const Navigation = () => {
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+    console.log(isOpen);
   };
 
   const closeMenu = () => {
     setIsOpen(false);
-    console.log(isOpen);
   };
 
   return (
@@ -45,29 +45,32 @@ const Navigation = () => {
           <img className={styles.toggle} src={menuToggle} alt="menu" />
         </div>
       </div>
-      <div className={styles["toggle-overlay"]} onClick={closeMenu}></div>
-      <div className={styles["toggle-menu"]}>
-        <Icon
-          icon="fa:close"
-          className={styles["close-icon"]}
-          onClick={closeMenu}
-        />
-        <form action="">
+      <div
+        className={
+          isOpen
+            ? `${styles["toggle-overlay"]}`
+            : `${styles["toggle-overlay"]} ${styles["overlay-close"]}`
+        }
+        onClick={closeMenu}
+      ></div>
 
-        <div className={`${styles["nav-header"]} title-text`}>
-          Book Appointment
-        </div>
-        <label>
-          <div className="body-text">Full Name:</div>
-          <input className="body-text" maxLength={25} type="text" />
-        </label>
-        <label>
-          <div className="body-text">Email:</div>
-          <input className="body-text" maxLength={25} type="email" />
-        </label>
-        <label>
+      {/* <div className={styles["toggle-menu"]}>
+        <Icon icon="fa:close" className={styles["close-icon"]} />
+        <form action="">
+          <div className={`${styles["nav-header"]} title-text`}>
+            Book Appointment
+          </div>
+          <label>
+            <div className="body-text">Full Name:</div>
+            <input className="body-text" maxLength={25} type="text" />
+          </label>
+          <label>
+            <div className="body-text">Email:</div>
+            <input className="body-text" maxLength={25} type="email" />
+          </label>
+          <label>
             <textarea
-            className="body-text"
+              className="body-text"
               type="message"
               placeholder="Message:"
               rows={4}
@@ -75,11 +78,9 @@ const Navigation = () => {
               maxLength={200}
             />
           </label>
-          <button className={`${styles.button} link-text` }>
-            Send Message
-          </button>
+          <button className={`${styles.button} link-text`}>Send Message</button>
         </form>
-      </div>
+      </div> */}
     </section>
   );
 };
