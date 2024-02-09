@@ -2,13 +2,20 @@ import React from "react";
 import styles from "./Footer.module.css";
 import logo from "../../assets/logo.svg";
 import img from "../../assets/footer-img.png";
+import { Link } from "react-router-dom";
+import { navLinks } from "../navigation/data";
 
 const Footer = () => {
+  const date = new Date();
+  const year = date.getFullYear();
+
   return (
     <footer>
       <section className={styles.footer}>
         <div className={styles["footer-top"]}>
-          <img className={styles.logo} src={logo} alt="" />
+          <Link to="/">
+            <img className={styles.logo} src={logo} alt="" />
+          </Link>
           <ul className={styles["footer-socials"]}>
             <li className={`${styles.social} body-text`}>
               <img src="" alt="" />
@@ -40,8 +47,12 @@ const Footer = () => {
               <p className={styles["footer-cta"]}>Together</p>
             </div>
             <div className={styles["footer-bottom-left-bottom"]}>
-              <div className={`${styles.email} body-text`}>bytebackdigital@gmail.com</div>
-              <div className={`${styles.phone} body-text`}>+1 (800) 123 - 4567</div>
+              <div className={`${styles.email} body-text`}>
+                bytebackdigital@gmail.com
+              </div>
+              <div className={`${styles.phone} body-text`}>
+                +1 (800) 123 - 4567
+              </div>
             </div>
           </div>
           <div className={styles["footer-bottom-right"]}>
@@ -50,19 +61,23 @@ const Footer = () => {
                 Quick Links
               </div>
               <ul className={styles.links}>
-                <li className={`${styles.link} body-text`}>Home</li>
-                <li className={`${styles.link} body-text`}>About Us</li>
-                <li className={`${styles.link} body-text`}>Portfolio</li>
-                <li className={`${styles.link} body-text`}>Service</li>
-                <li className={`${styles.link} body-text`}>Contact</li>
+                {navLinks.map((link, index) => {
+                  return (
+                    <Link to={link.path} key={index}>
+                      <li className={`${styles.link} body-text`}>
+                        {link.name}
+                      </li>
+                    </Link>
+                  );
+                })}
               </ul>
             </div>
             <div
               className={`${styles["footer-bottom-right-bottom"]} label-text`}
             >
               <p>
-                Copyright @2023, <span>&nbsp;Byte Back Digital&nbsp;</span> All
-                Rights Reserved
+                Copyright @{year}, <span>&nbsp;Byte Back Digital&nbsp;</span>{" "}
+                All Rights Reserved
               </p>
             </div>
           </div>
