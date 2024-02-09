@@ -49,13 +49,19 @@ const Navigation = () => {
         className={
           isOpen
             ? `${styles["toggle-overlay"]}`
-            : `${styles["toggle-overlay"]} ${styles["overlay-close"]}`
+            : `${styles["toggle-overlay"]} ${styles["menu-close"]}`
         }
         onClick={closeMenu}
       ></div>
 
-      {/* <div className={styles["toggle-menu"]}>
-        <Icon icon="fa:close" className={styles["close-icon"]} />
+      <div
+        className={
+          isOpen
+            ? `${styles["toggle-menu"]}`
+            : `${styles["toggle-menu"]} ${styles["menu-close"]}`
+        }
+      >
+        <Icon icon="fa:close" className={styles["close-icon"]} onClick={closeMenu}/>
         <form action="">
           <div className={`${styles["nav-header"]} title-text`}>
             Book Appointment
@@ -80,7 +86,7 @@ const Navigation = () => {
           </label>
           <button className={`${styles.button} link-text`}>Send Message</button>
         </form>
-      </div> */}
+      </div>
     </section>
   );
 };
