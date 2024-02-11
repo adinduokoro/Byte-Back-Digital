@@ -1,7 +1,6 @@
 .hero {
   position: relative;
 height: 90.5vh;
-  border: 1px solid salmon;
   z-index: 900;
 }
 

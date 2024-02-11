@@ -6,29 +6,51 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 
 const Hero = () => {
-  const hero = useRef()
-  const tl = useRef()
+  const hero = useRef();
+  const tl = useRef();
 
-  useGSAP(() => {
-    tl.current = gsap.timeline()
-      .from("#bg1", {xPercent: -100, duration: 1, delay: 1, ease:"power1.inOut" })
-      .from("#bg2", {xPercent: 100, duration: 1, } , "<")
-
-
-  }, {scope: hero})
+  useGSAP(
+    () => {
+      tl.current = gsap.timeline()
+    },
+    { scope: hero }
+  );
 
   return (
     <section className={styles.hero} ref={hero}>
-      <div className={styles["hero-content"]} >
+      <div className={styles["hero-content"]}>
         <div className={styles["hero-logo"]}>
-          <div className={styles.text} style={{marginLeft: "0"}}>WEB</div>
-          <div className={styles.text} style={{marginLeft: "8.69rem"}}>DE</div>
-          <div className={styles.text} style={{marginLeft: "16.06rem"}}>SIG</div>
+          <div
+            className={styles.text}
+            style={{ marginLeft: "0" }}
+            id="hero-text"
+          >
+            <span id="single-letter">W</span>
+            <span id="single-letter">E</span>
+            <span id="single-letter">B</span>
+          </div>
+          <div
+            className={styles.text}
+            style={{ marginLeft: "8.69rem" }}
+            id="hero-text"
+          >
+            DE
+          </div>
+          <div
+            className={styles.text}
+            style={{ marginLeft: "16.06rem" }}
+            id="hero-text"
+          >
+            <span id="single-leter">S</span>
+            <span id="single-leter">I</span>
+            <span id="single-ltter">G</span>
+          </div>
+
           <div className={styles["text-content"]}>
             <div className={styles.bar}>
-                <div className={styles.tag}>COMPANY</div>
+              <div className={styles.tag}>COMPANY</div>
             </div>
-            <div className={styles.text} >N</div>
+            <div className={styles.text}>N</div>
           </div>
         </div>
         <div className={styles.left}>
