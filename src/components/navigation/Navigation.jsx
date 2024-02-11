@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import { Icon } from "@iconify/react";
 import { navLinks } from "./data";
 
+
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -20,7 +21,7 @@ const Navigation = () => {
   };
 
   return (
-    <section className={styles.navigation}>
+<section className={styles.navigation}>
       <div className={styles["nav-container"]}>
         <Link to="/">
           <img className={styles.logo} src={logo} alt="logo" />
@@ -38,52 +39,46 @@ const Navigation = () => {
           <img className={styles.toggle} src={menuToggle} alt="menu" />
         </div>
       </div>
-      <div
-        className={
-          isOpen
-            ? `${styles["toggle-overlay"]}`
-            : `${styles["toggle-overlay"]} ${styles["menu-close"]}`
-        }
-        onClick={closeMenu}
-      ></div>
-
-      <div
-        className={
-          isOpen
-            ? `${styles["toggle-menu"]}`
-            : `${styles["toggle-menu"]} ${styles["menu-close"]}`
-        }
-      >
-        <Icon
-          icon="fa:close"
-          className={styles["close-icon"]}
-          onClick={closeMenu}
-        />
-        <form action="">
-          <div className={`${styles["nav-header"]} title-text`}>
-            Book Appointment
-          </div>
-          <label>
-            <div className="body-text">Full Name:</div>
-            <input className="body-text" maxLength={25} type="text" />
-          </label>
-          <label>
-            <div className="body-text">Email:</div>
-            <input className="body-text" maxLength={25} type="email" />
-          </label>
-          <label>
-            <textarea
-              className="body-text"
-              type="message"
-              placeholder="Message:"
-              rows={4}
-              cols={40}
-              maxLength={200}
+      {/* Conditionally render overlay and menu */}
+      {isOpen && (
+        <>
+          {/* Overlay to close menu when clicked outside */}
+          <div className={styles["toggle-overlay"]} onClick={closeMenu}></div>
+  
+          {/* Menu content */}
+          <div className={`${styles["toggle-menu"]}`}>
+            <Icon
+              icon="fa:close"
+              className={styles["close-icon"]}
+              onClick={closeMenu}
             />
-          </label>
-          <button className={`${styles.button} link-text`}>Send Message</button>
-        </form>
-      </div>
+            <form action="">
+              <div className={`${styles["nav-header"]} title-text`}>
+                Book Appointment
+              </div>
+              <label>
+                <div className="body-text">Full Name:</div>
+                <input className="body-text" maxLength={25} type="text" />
+              </label>
+              <label>
+                <div className="body-text">Email:</div>
+                <input className="body-text" maxLength={25} type="email" />
+              </label>
+              <label>
+                <textarea
+                  className="body-text"
+                  type="message"
+                  placeholder="Message:"
+                  rows={4}
+                  cols={40}
+                  maxLength={200}
+                />
+              </label>
+              <button className={`${styles.button} link-text`}>Send Message</button>
+            </form>
+          </div>
+        </>
+      )}
     </section>
   );
 };
