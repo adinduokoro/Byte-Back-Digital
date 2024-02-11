@@ -1,6 +1,8 @@
 .hero {
   position: relative;
-  height: 90.5vh;
+height: 90.5vh;
+  border: 1px solid salmon;
+  z-index: 900;
 }
 
 .hero-content {
@@ -9,8 +11,7 @@
   display: flex;
   overflow: hidden;
   position: absolute;
-  top: 0;
-  left: 0;
+
   width: 100%;
 }
 
