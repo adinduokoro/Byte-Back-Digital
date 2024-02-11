@@ -1,12 +1,25 @@
-import React from "react";
+import React, { useRef } from "react";
 import styles from "./Hero.module.css";
 import bg1 from "../../assets/background-img1.png";
 import bg2 from "../../assets/background-img2.png";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
 
 const Hero = () => {
+  const hero = useRef()
+  const tl = useRef()
+
+  useGSAP(() => {
+    tl.current = gsap.timeline()
+      .from("#bg1", {xPercent: -100, duration: 1, delay: 1, ease:"power1.inOut" })
+      .from("#bg2", {xPercent: 100, duration: 1, } , "<")
+
+
+  }, {scope: hero})
+
   return (
-    <section className={styles.hero}>
-      <div className={styles["hero-content"]}>
+    <section className={styles.hero} ref={hero}>
+      <div className={styles["hero-content"]} >
         <div className={styles["hero-logo"]}>
           <div className={styles.text} style={{marginLeft: "0"}}>WEB</div>
           <div className={styles.text} style={{marginLeft: "8.69rem"}}>DE</div>
@@ -19,10 +32,10 @@ const Hero = () => {
           </div>
         </div>
         <div className={styles.left}>
-          <img className={styles.bg1} src={bg1} alt="" />
+          <img className={styles.bg1} src={bg1} id="bg1" alt="" />
         </div>
         <div className={styles.right}>
-          <img className={styles.bg2} src={bg2} alt="" />
+          <img className={styles.bg2} src={bg2} id="bg2" alt="" />
         </div>
       </div>
     </section>

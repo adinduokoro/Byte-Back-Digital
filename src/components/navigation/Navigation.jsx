@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import "./Navigation.module.css";
 import styles from "./Navigation.module.css";
 import logo from "../../assets/logo.svg";
@@ -6,6 +6,8 @@ import menuToggle from "../../assets/menuToggle.svg";
 import { Link } from "react-router-dom";
 import { Icon } from "@iconify/react";
 import { navLinks } from "./data";
+
+
 
 
 const Navigation = () => {
@@ -20,8 +22,9 @@ const Navigation = () => {
     setIsOpen(false);
   };
 
+
   return (
-<section className={styles.navigation}>
+<section className={styles.navigation} >
       <div className={styles["nav-container"]}>
         <Link to="/">
           <img className={styles.logo} src={logo} alt="logo" />
