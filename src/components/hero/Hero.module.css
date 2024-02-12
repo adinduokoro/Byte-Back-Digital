@@ -1,7 +1,6 @@
 .hero {
   position: relative;
 height: 90.5vh;
-  z-index: 900;
 }
 
 .hero-content {
@@ -65,6 +64,7 @@ height: 90.5vh;
   font-weight: 700;
   line-height: 8.6875rem; /* 86.875% */
   text-transform: uppercase;
+  display: flex;
 }
 
 .text-content {
