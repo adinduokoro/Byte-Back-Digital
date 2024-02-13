@@ -41,7 +41,7 @@ const Hero = () => {
         .from(
           "#sig",
           {
-            stagger: 0.15,
+            stagger: 0.18,
             y: -100,
             opacity: 0,
           },
@@ -53,6 +53,8 @@ const Hero = () => {
             stagger: 0.15,
             y: 100,
             opacity: 0,
+            duration: 1.2,
+
           },
           ">=-0.4"
         )
@@ -62,6 +64,8 @@ const Hero = () => {
             stagger: 0.15,
             x: -300,
             opacity: 0,
+            duration: 1.2,
+
           },
           "<"
         );
