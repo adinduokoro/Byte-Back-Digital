@@ -5,10 +5,13 @@
   z-index: 100;
   align-items: center;
   justify-content: center;
+  border: 1px solid green;
+  width: 200vw;
 }
 
+
 .nav-container {
-  background: var(--primaryColorBlack);
+  background-color: var(--ruler-color);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -16,6 +19,11 @@
   max-width: 75rem;
   width: 100%;
   height: 6.25rem;
+  transition: all 1s ease-in-out; 
+}
+
+.active{
+  background: var(--primaryColorBlack);
 }
 
 .logo {

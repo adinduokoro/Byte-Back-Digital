@@ -6,9 +6,10 @@ import menuToggle from "../../assets/menuToggle.svg";
 import { Link } from "react-router-dom";
 import { Icon } from "@iconify/react";
 import { navLinks } from "./data";
-
-
-
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useGSAP } from "@gsap/react";
+gsap.registerPlugin(ScrollTrigger)
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,10 +23,24 @@ const Navigation = () => {
     setIsOpen(false);
   };
 
+  const container = useRef()
+
+  useGSAP(() => {
+    ScrollTrigger.create({
+      trigger: container.current,
+      markers: true,
+      start: "top 9%",
+      end: "center",
+      toggleClass: {targets: "#nav", className: `${styles.active}`}
+    })
+  }, {
+    scope : container
+  })
 
   return (
-<section className={styles.navigation} >
-      <div className={styles["nav-container"]}>
+    <div className={styles.test}>
+    <section className={styles.navigation} ref={container}>
+      <div className={styles["nav-container"]} id="nav">
         <Link to="/">
           <img className={styles.logo} src={logo} alt="logo" />
         </Link>
@@ -47,7 +62,7 @@ const Navigation = () => {
         <>
           {/* Overlay to close menu when clicked outside */}
           <div className={styles["toggle-overlay"]} onClick={closeMenu}></div>
-  
+
           {/* Menu content */}
           <div className={`${styles["toggle-menu"]}`}>
             <Icon
@@ -77,12 +92,16 @@ const Navigation = () => {
                   maxLength={200}
                 />
               </label>
-              <button className={`${styles.button} link-text`}>Send Message</button>
+              <button className={`${styles.button} link-text`}>
+                Send Message
+              </button>
             </form>
           </div>
         </>
       )}
     </section>
+
+    </div>
   );
 };
 

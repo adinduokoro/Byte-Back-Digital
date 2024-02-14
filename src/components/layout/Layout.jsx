@@ -1,12 +1,12 @@
 import React from "react";
 import "./Layout.module.css";
-import { Header, Footer } from "../index";
+import { Navigation, Footer } from "../index";
 import { Outlet } from "react-router-dom";
 
 const Layout = () => {
   return (
     <>
-      <Header />
+      <Navigation />
       <Outlet />
       <Footer />
     </>
