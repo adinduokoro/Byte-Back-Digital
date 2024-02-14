@@ -5,25 +5,29 @@
   z-index: 100;
   align-items: center;
   justify-content: center;
-  border: 1px solid green;
-  width: 200vw;
 }
 
 
 .nav-container {
-  background-color: var(--ruler-color);
   display: flex;
-  align-items: center;
-  justify-content: space-between;
   position: fixed;
-  max-width: 75rem;
   width: 100%;
   height: 6.25rem;
-  transition: all 1s ease-in-out; 
+  transition: all .5s ease-in-out; 
+  background: var(--primaryColorBlack);
 }
 
 .active{
-  background: var(--primaryColorBlack);
+  background-color: var(--ruler-color);
+}
+
+.nav-content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 75rem;
+  margin: 0 auto;
 }
 
 .logo {

@@ -1,15 +1,10 @@
-import React, { useRef, useState } from "react";
-import "./Navigation.module.css";
+import React, { useState } from "react";
 import styles from "./Navigation.module.css";
 import logo from "../../assets/logo.svg";
 import menuToggle from "../../assets/menuToggle.svg";
 import { Link } from "react-router-dom";
 import { Icon } from "@iconify/react";
 import { navLinks } from "./data";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useGSAP } from "@gsap/react";
-gsap.registerPlugin(ScrollTrigger)
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,38 +18,25 @@ const Navigation = () => {
     setIsOpen(false);
   };
 
-  const container = useRef()
-
-  useGSAP(() => {
-    ScrollTrigger.create({
-      trigger: container.current,
-      markers: true,
-      start: "top 9%",
-      end: "center",
-      toggleClass: {targets: "#nav", className: `${styles.active}`}
-    })
-  }, {
-    scope : container
-  })
-
   return (
-    <div className={styles.test}>
-    <section className={styles.navigation} ref={container}>
+    <navigation className={styles.navigation}>
       <div className={styles["nav-container"]} id="nav">
-        <Link to="/">
-          <img className={styles.logo} src={logo} alt="logo" />
-        </Link>
-        <ul className={styles.navLinks}>
-          {navLinks.map((link, index) => {
-            return (
-              <li className={`${styles.navLink} link-text`} key={index}>
-                <Link to={link.path}>{link.name}</Link>
-              </li>
-            );
-          })}
-        </ul>
-        <div className={styles.menuToggle} onClick={toggleMenu}>
-          <img className={styles.toggle} src={menuToggle} alt="menu" />
+        <div className={styles["nav-content"]}>
+          <Link to="/">
+            <img className={styles.logo} src={logo} alt="logo" />
+          </Link>
+          <ul className={styles.navLinks}>
+            {navLinks.map((link, index) => {
+              return (
+                <li className={`${styles.navLink} link-text`} key={index}>
+                  <Link to={link.path}> <strong>{link.name}</strong></Link>
+                </li>
+              );
+            })}
+          </ul>
+          <div className={styles.menuToggle} onClick={toggleMenu}>
+            <img className={styles.toggle} src={menuToggle} alt="menu" />
+          </div>
         </div>
       </div>
       {/* Conditionally render overlay and menu */}
@@ -99,9 +81,7 @@ const Navigation = () => {
           </div>
         </>
       )}
-    </section>
-
-    </div>
+    </navigation>
   );
 };
 
