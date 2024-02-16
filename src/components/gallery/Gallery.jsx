@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import styles from "./Gallery.module.css";
 import arrow from "../../assets/arrow-right.svg";
 import { projects } from "./data";
-import linkicon from "../../assets/link-icon.svg"
+import linkicon from "../../assets/link-icon.svg";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
@@ -11,25 +11,53 @@ gsap.registerPlugin(ScrollTrigger);
 const Gallery = () => {
   const container = useRef();
 
-  useGSAP(() => {
-    gsap.from(["#subheading", "#heading"], {
-      opacity: 0,
-      y: 50,
-      stagger: 0.2,
-      scrollTrigger: {
-        trigger: ["#subheading", "#heading"],
-        scrub: 3,
-        start: "top 80%",
-        end: "top 80%",
-      }
-    })
+  useGSAP(
+    () => {
+      gsap.from(["#subheading", "#heading"], {
+        opacity: 0,
+        y: 50,
+        stagger: 0.2,
+        scrollTrigger: {
+          trigger: ["#subheading", "#heading"],
+          scrub: 3,
+          start: "top 80%",
+          end: "top 80%",
+        },
+      });
+      gsap.from(`.${styles.project}:nth-child(odd)`, {
+        opacity: 0,
+        x: -100,
+        stagger: 0.2,
+        scrollTrigger: {
+          trigger: "#gallery-container",
+          scrub: 3,
+          start: "top 80%",
+          end: "75% 80%",
+        },
+      });
 
-  },{
-    scope: container
-  });
+      gsap.from(`.${styles.project}:nth-child(even)`, {
+        opacity: 0,
+        x: 100,
+        stagger: 0.2,
+        scrollTrigger: {
+          trigger: "#gallery-container",
+          scrub: 3,
+          start: "top 80%",
+          end: "75% 80%",
+          markers: true,
+        },
+      });
+    },
+    {
+      scope: container,
+    }
+  );
 
   const handleMouseLeave = (index) => {
-    const projectContainer = container.current.querySelector(`#project-container-${index}`);
+    const projectContainer = container.current.querySelector(
+      `#project-container-${index}`
+    );
     projectContainer.scrollTop = 0;
   };
 
@@ -50,11 +78,18 @@ const Gallery = () => {
         </div>
       </div>
 
-      <div className={styles["gallery-container"]}>
+      <div className={styles["gallery-container"]} id="gallery-container">
         {projects.map((project, index) => {
           return (
-            <div className={styles.project} key={index} onMouseLeave={() => handleMouseLeave(index)}>
-              <div className={styles["project-container"]} id={`project-container-${index}`} >
+            <div
+              className={styles.project}
+              key={index}
+              onMouseLeave={() => handleMouseLeave(index)}
+            >
+              <div
+                className={styles["project-container"]}
+                id={`project-container-${index}`}
+              >
                 <img src={project.image} alt="" />
               </div>
               <div className={`${styles.title} title-text`}>
