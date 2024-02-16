@@ -1,19 +1,41 @@
-import React from "react";
+import React, { useRef } from "react";
 import styles from "./Gallery.module.css";
 import arrow from "../../assets/arrow-right.svg";
 import { projects } from "./data";
 import linkicon from "../../assets/link-icon.svg"
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+gsap.registerPlugin(ScrollTrigger);
 
 const Gallery = () => {
+  const container = useRef();
+
+  useGSAP(() => {
+    gsap.from(["#subheading", "#heading"], {
+      opacity: 0,
+      y: 50,
+      stagger: 0.2,
+      scrollTrigger: {
+        trigger: ["#subheading", "#heading"],
+        scrub: 3,
+        start: "top 80%",
+        end: "top 80%",
+      }
+    })
+  },{
+    scope: container
+  })
+
   return (
-    <section className={styles.gallery}>
+    <section className={styles.gallery} ref={container}>
       <div className={styles["gallery-header"]}>
-        <div className={`${styles.subHeading} subHead-text`}>
+        <div className={`${styles.subHeading} subHead-text`} id="subheading">
           <img className={styles.icon} src={arrow} alt="" />
           Recent Works Gallery
         </div>
         <div className={styles["heading-content"]}>
-          <div className={`${styles.heading} d-text`}>
+          <div className={`${styles.heading} d-text`} id="heading">
             Take a Look at Our Recent Project Gallery
           </div>
           <button className={`${styles.button} link-text`}>

@@ -22,6 +22,19 @@ const Service = () => {
         end: "top 80%",
       }
     })
+    gsap.from("#badge", {
+      opacity: 0,
+      y: 50,
+      stagger: 0.2,
+      scale: 1.25,
+      scrollTrigger: {
+        trigger: ["#badge"],
+        scrub: 3,
+        start: "top 80%",
+        end: "top 80%",
+      }
+    })
+
 
   },{scope: container})
 
@@ -36,10 +49,10 @@ const Service = () => {
           Crafting Outstanding Web Design Solutions
         </div>
       </div>
-      <div className={styles.badges}>
+      <div className={styles.badges} id="badges">
         {badges.map((badge, index) => {
           return (
-            <div className={styles.badge} key={index}>
+            <div className={styles.badge} key={index} id="badge">
               <img className={styles.badgeImage} src={badge.image} alt="" />
               <div className={`${styles["badge-title"]} title-text`}>{badge.topic}</div>
             </div>

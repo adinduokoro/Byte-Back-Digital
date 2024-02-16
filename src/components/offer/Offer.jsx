@@ -24,6 +24,18 @@ const Offer = () => {
         }
       })
 
+      gsap.from(["#subheading", "#heading"], {
+        opacity: 0,
+        y: 50,
+        stagger: 0.2,
+        scrollTrigger: {
+          trigger: ["#subheading", "#heading"],
+          scrub: 3,
+          start: "top 80%",
+          end: "top 80%",
+        }
+      })
+
       gsap.from("#card", {
         opacity: 0,
         x: -50,
@@ -71,11 +83,11 @@ const Offer = () => {
       </div>
       <div className={styles["offer-content"]}>
         <div className={styles.left}>
-          <div className={`${styles.subHeading} subHead-text`}>
+          <div className={`${styles.subHeading} subHead-text`} id="subheading">
             <img className={styles.icon} src={arrow} alt="" />
             What We Do
           </div>
-          <div className={`${styles.heading} d-text`}>
+          <div className={`${styles.heading} d-text`} id="heading">
             Service That Makes Your Brand <span>Stand Out</span> and Grow
           </div>
           <div className={styles["offer-cards"]}>

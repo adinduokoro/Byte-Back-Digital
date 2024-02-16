@@ -76,4 +76,12 @@
   width: 1.4375rem;
   height: 1.4375rem;
   cursor: pointer;
+  transition: transform 0.3s ease;
+
 }
+
+.title img:hover{
+  transform: scale(1.1);
+}
+
+
