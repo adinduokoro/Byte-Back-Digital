@@ -50,6 +50,7 @@
   overflow: auto;
   scroll-behavior: smooth;
   margin-bottom: 0.9375rem;
+  border: 5px solid green;
 }
 
 .project-container::-webkit-scrollbar {
@@ -81,7 +82,7 @@
 }
 
 .title img:hover{
-  transform: scale(1.1);
+  transform: scale(1.25);
 }
 
 

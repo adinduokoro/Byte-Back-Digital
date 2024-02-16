@@ -48,7 +48,7 @@ const Gallery = () => {
         {projects.map((project, index) => {
           return (
             <div className={styles.project} key={index}>
-              <div className={styles["project-container"]}>
+              <div className={styles["project-container"]} >
                 <img src={project.image} alt="" />
               </div>
               <div className={`${styles.title} title-text`}>
