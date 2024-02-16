@@ -9,7 +9,7 @@ import gsap from "gsap";
 gsap.registerPlugin(ScrollTrigger);
 
 const Gallery = () => {
-  const galleryRef = useRef();
+  const container = useRef();
 
   useGSAP(() => {
     gsap.from(["#subheading", "#heading"], {
@@ -23,17 +23,18 @@ const Gallery = () => {
         end: "top 80%",
       }
     })
+
   },{
-    scope: galleryRef
+    scope: container
   });
 
   const handleMouseLeave = (index) => {
-    const projectContainer = galleryRef.current.querySelector(`#project-container-${index}`);
+    const projectContainer = container.current.querySelector(`#project-container-${index}`);
     projectContainer.scrollTop = 0;
   };
 
   return (
-    <section className={styles.gallery} ref={galleryRef}>
+    <section className={styles.gallery} ref={container}>
       <div className={styles["gallery-header"]}>
         <div className={`${styles.subHeading} subHead-text`} id="subheading">
           <img className={styles.icon} src={arrow} alt="" />
