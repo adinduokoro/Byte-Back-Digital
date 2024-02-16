@@ -9,7 +9,7 @@ height: 90.5vh;
   display: flex;
   overflow: hidden;
   position: absolute;
-
+  user-select: none;
   width: 100%;
 }
 

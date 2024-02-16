@@ -1,15 +1,52 @@
-import React from "react";
+import React, { useRef } from "react";
 import styles from "./Cta.module.css";
 import ctaImage from "../../assets/cta-img.png";
-import arrow from "../../assets/arrow-right.svg"
+import arrow from "../../assets/arrow-right.svg";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+gsap.registerPlugin(ScrollTrigger);
 
 const Cta = () => {
+  const container = useRef();
+
+  useGSAP(
+    () => {
+      gsap.from("#cta-left", {
+        y: -200,
+        opacity: 0,
+        duration: 0.5,
+        scrollTrigger: {
+          trigger: "#cta-left",
+          scrub: 3,
+          start: "top 80%",
+          end: "top 80%",
+        },
+      });
+
+      gsap.from("#cta-right", {
+        y: 200,
+        opacity: 0,
+        duration: 0.5,
+        scrollTrigger: {
+          trigger: "#cta-right",
+          scrub: 3,
+          start: "top 80%",
+          end: "top 80%",
+        },
+      });
+    },
+    {
+      scope: container,
+    }
+  );
+
   return (
-    <section className={styles.cta}>
-      <div className={styles["cta-left"]}>
+    <section className={styles.cta} ref={container}>
+      <div className={styles["cta-left"]} id="cta-left">
         <img className={styles.ctaImage} src={ctaImage} alt="" />
       </div>
-      <div className={styles["cta-right"]}>
+      <div className={styles["cta-right"]} id="cta-right">
         <div className={`${styles.subHeading} subHead-text`}>
           <img className={styles.icon} src={arrow} alt="" />
           Our Company

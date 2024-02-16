@@ -1,13 +1,64 @@
-import React from "react";
+import React, { useRef } from "react";
 import styles from "./Offer.module.css";
 import arrow from "../../assets/arrow-right.svg";
 import { cards } from "./data";
 import offerImage from "../../assets/offer-image.png";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+gsap.registerPlugin(ScrollTrigger);
 
 const Offer = () => {
+  const container = useRef();
+
+  useGSAP(
+    () => {
+      gsap.from("#marquee", {
+        opacity: 0,
+        scale: 0.5,
+        scrollTrigger: {
+          trigger: "#marquee",
+          scrub: 3,
+          start: "top 80%",
+          end: "top 80%"
+        }
+      })
+
+      gsap.from("#card", {
+        opacity: 0,
+        y: 50,
+        stagger: 0.2,
+        scrollTrigger: {
+          trigger: "#card",
+          scrub: 3,
+          start: "top 80%",
+          end: "top 80%"
+
+        }
+      })
+
+      gsap.from("#img", {
+        rotate: "2.5",
+        scale: 0.9,
+        scrollTrigger: {
+          trigger: "#img",
+          scrub: 3,
+          start: "top 80%",
+          end: "top 80%"
+
+        }
+      })
+    },
+    {
+      scope: container,
+
+    }
+
+  );
+
   return (
-    <section className={styles.offer}>
-      <div className={styles.marquee}>
+    <section className={styles.offer} ref={container}>
+      <div className={styles.marquee} id="marquee">
         <div className={styles["marquee-text"]}>
           Byte <span>Back</span> Digital
         </div>
@@ -30,7 +81,7 @@ const Offer = () => {
           <div className={styles["offer-cards"]}>
             {cards.map((card, index) => {
               return (
-                <div className={styles.card} key={index}>
+                <div className={styles.card} key={index} id="card">
                   <div className={`${styles["card-index"]} body-text`}>
                     {index + 1}
                   </div>
@@ -49,7 +100,7 @@ const Offer = () => {
           </div>
         </div>
         <div className={styles.right}>
-          <img className={styles.offerImage} src={offerImage} alt="" />
+          <img className={styles.offerImage} src={offerImage} alt="" id="img"/>
         </div>
       </div>
     </section>
