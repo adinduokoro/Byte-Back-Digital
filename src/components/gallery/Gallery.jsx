@@ -9,7 +9,7 @@ import gsap from "gsap";
 gsap.registerPlugin(ScrollTrigger);
 
 const Gallery = () => {
-  const container = useRef();
+  const galleryRef = useRef();
 
   useGSAP(() => {
     gsap.from(["#subheading", "#heading"], {
@@ -24,11 +24,16 @@ const Gallery = () => {
       }
     })
   },{
-    scope: container
-  })
+    scope: galleryRef
+  });
+
+  const handleMouseLeave = (index) => {
+    const projectContainer = galleryRef.current.querySelector(`#project-container-${index}`);
+    projectContainer.scrollTop = 0;
+  };
 
   return (
-    <section className={styles.gallery} ref={container}>
+    <section className={styles.gallery} ref={galleryRef}>
       <div className={styles["gallery-header"]}>
         <div className={`${styles.subHeading} subHead-text`} id="subheading">
           <img className={styles.icon} src={arrow} alt="" />
@@ -47,13 +52,13 @@ const Gallery = () => {
       <div className={styles["gallery-container"]}>
         {projects.map((project, index) => {
           return (
-            <div className={styles.project} key={index}>
-              <div className={styles["project-container"]} >
+            <div className={styles.project} key={index} onMouseLeave={() => handleMouseLeave(index)}>
+              <div className={styles["project-container"]} id={`project-container-${index}`} >
                 <img src={project.image} alt="" />
               </div>
               <div className={`${styles.title} title-text`}>
                 {project.title}
-              <img src={linkicon} alt="" />
+                <img src={linkicon} alt="" />
               </div>
             </div>
           );

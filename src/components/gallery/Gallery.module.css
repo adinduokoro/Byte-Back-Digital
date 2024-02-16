@@ -50,7 +50,6 @@
   overflow: auto;
   scroll-behavior: smooth;
   margin-bottom: 0.9375rem;
-  border: 5px solid green;
 }
 
 .project-container::-webkit-scrollbar {
