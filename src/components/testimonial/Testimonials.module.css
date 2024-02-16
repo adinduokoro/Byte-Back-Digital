@@ -99,6 +99,11 @@
   gap: 1.88rem;
 }
 
+.left-button,
+.right-button{
+  cursor: pointer;
+}
+
 .index {
   display: flex;
   gap: 0.62rem;

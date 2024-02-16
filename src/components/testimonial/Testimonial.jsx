@@ -24,11 +24,11 @@ const Testimonial = () => {
         <div className={styles.left}>
           <div className={styles.review}>
             <div className={styles.rating}>
-              <img className="start" src={star} alt="" />
-              <img className="start" src={star} alt="" />
-              <img className="start" src={star} alt="" />
-              <img className="start" src={star} alt="" />
-              <img className="start" src={star} alt="" />
+              <img className="star" src={star} alt="" />
+              <img className="star" src={star} alt="" />
+              <img className="star" src={star} alt="" />
+              <img className="star" src={star} alt="" />
+              <img className="star" src={star} alt="" />
             </div>
             <div className={`${styles.feedback} subHead-text`}>
               Incredible custom design! The team's dedication, creativity, and
