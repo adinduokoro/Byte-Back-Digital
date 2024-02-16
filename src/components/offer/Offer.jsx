@@ -26,7 +26,7 @@ const Offer = () => {
 
       gsap.from("#card", {
         opacity: 0,
-        y: 50,
+        x: -50,
         stagger: 0.2,
         scrollTrigger: {
           trigger: "#card",

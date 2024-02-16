@@ -121,7 +121,12 @@ button {
   width: 14.375rem;
   height: 3.1875rem;
   font-weight: var(--font-bold) !important;
+  transition: all .25s ease-in-out;
+}
 
+button:hover{
+  background-color: var(--primaryColorGreen);
+  color: #000000;
 }
 
 a {
