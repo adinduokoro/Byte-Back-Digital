@@ -4,6 +4,7 @@ import clientPic from "../../assets/client-picture.png";
 import star from "../../assets/star-bold.svg";
 import leftBtn from "../../assets/left-vector.svg";
 import rightBtn from "../../assets/right-vector.svg";
+import { testimonials } from "./data";
 
 const Testimonial = () => {
   return (

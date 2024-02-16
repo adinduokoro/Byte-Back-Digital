@@ -26,26 +26,25 @@ const Gallery = () => {
       });
       gsap.from(`.${styles.project}:nth-child(odd)`, {
         opacity: 0,
-        x: -100,
+        x: -150,
         stagger: 0.2,
         scrollTrigger: {
           trigger: "#gallery-container",
           scrub: 3,
           start: "top 80%",
-          end: "75% 80%",
+          end: "50% 80%",
         },
       });
 
       gsap.from(`.${styles.project}:nth-child(even)`, {
         opacity: 0,
-        x: 100,
+        x: 150,
         stagger: 0.2,
         scrollTrigger: {
           trigger: "#gallery-container",
           scrub: 3,
           start: "top 80%",
-          end: "75% 80%",
-          markers: true,
+          end: "50% 80%",
         },
       });
     },

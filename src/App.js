@@ -2,10 +2,12 @@ import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import { Layout } from "./components";
 import { Home, Contact, Admin, NoPage } from "./pages";
+import ScrollToTop from "./helpers/ScrollToTop.jsx";
 
 function App() {
   return (
     <div className="App">
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />

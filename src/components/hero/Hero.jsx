@@ -14,7 +14,7 @@ const Hero = () => {
       timeline.current = gsap
         .timeline()
         .from("#bg1", {
-          delay: 0.6,
+          delay: 0.25,
           duration: 1.2,
           xPercent: -110,
           ease: "power2.inOut",
