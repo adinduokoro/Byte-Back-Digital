@@ -37,26 +37,33 @@ const Testimonial = () => {
         <div className={styles.left}>
           {testimonials.map((testimonial, index) => {
             return (
-              <>
+              <div className={styles.clientReview}>
                 <div className={styles.review}>
                   <div className={styles.rating}>
-                    <img className="star" src={star} alt="" />
-                    <img className="star" src={star} alt="" />
-                    <img className="star" src={star} alt="" />
-                    <img className="star" src={star} alt="" />
-                    <img className="star" src={star} alt="" />
+                    {(() => {
+                      const stars = [];
+                      const maxStars = Math.min(testimonial.rating, 5);
+                      for (let i = 0; i < maxStars; i++) {
+                        stars.push(
+                          <img className="star" src={star} alt="" key={i} />
+                        );
+                      }
+                      return stars;
+                    })()}
                   </div>
                   <div className={`${styles.feedback} subHead-text`}>
                     {testimonial.feedback}
                   </div>
                 </div>
                 <div className={styles.info}>
-                  <div className={`${styles.name} title-text`}>{testimonial.name}</div>
+                  <div className={`${styles.name} title-text`}>
+                    {testimonial.name}
+                  </div>
                   <div className={`${styles.title} body-text`}>
                     {testimonial.title}
                   </div>
                 </div>
-              </>
+              </div>
             );
           })}
           <div className={styles["slide-controls"]}>
@@ -67,11 +74,16 @@ const Testimonial = () => {
               alt=""
             />
             <div className={styles.index}>
+
+
               <div
                 className={`${styles["point-active"]} ${styles.point}`}
               ></div>
               <div className={styles.point}></div>
               <div className={styles.point}></div>
+
+
+              
             </div>
             <img
               className={styles["right-button"]}
