@@ -74,16 +74,15 @@ const Testimonial = () => {
               alt=""
             />
             <div className={styles.index}>
-
-
+              {/*  */}
+              {/*  */}
               <div
                 className={`${styles["point-active"]} ${styles.point}`}
               ></div>
               <div className={styles.point}></div>
               <div className={styles.point}></div>
-
-
-              
+              {/*  */}
+              {/*  */}
             </div>
             <img
               className={styles["right-button"]}
