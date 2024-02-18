@@ -35,24 +35,30 @@ const Testimonial = () => {
       </div>
       <div className={styles["testimonial-content"]}>
         <div className={styles.left}>
-          <div className={styles.review}>
-            <div className={styles.rating}>
-              <img className="star" src={star} alt="" />
-              <img className="star" src={star} alt="" />
-              <img className="star" src={star} alt="" />
-              <img className="star" src={star} alt="" />
-              <img className="star" src={star} alt="" />
-            </div>
-            <div className={`${styles.feedback} subHead-text`}>
-              Incredible custom design! The team's dedication, creativity, and
-              attention to detail exceeded our expectations. Highly recommend
-              their top-notch service!
-            </div>
-          </div>
-          <div className={styles.info}>
-            <div className={`${styles.name} title-text`}>Jane Doe</div>
-            <div className={`${styles.title} body-text`}>CEO & Founder</div>
-          </div>
+          {testimonials.map((testimonial, index) => {
+            return (
+              <>
+                <div className={styles.review}>
+                  <div className={styles.rating}>
+                    <img className="star" src={star} alt="" />
+                    <img className="star" src={star} alt="" />
+                    <img className="star" src={star} alt="" />
+                    <img className="star" src={star} alt="" />
+                    <img className="star" src={star} alt="" />
+                  </div>
+                  <div className={`${styles.feedback} subHead-text`}>
+                    {testimonial.feedback}
+                  </div>
+                </div>
+                <div className={styles.info}>
+                  <div className={`${styles.name} title-text`}>{testimonial.name}</div>
+                  <div className={`${styles.title} body-text`}>
+                    {testimonial.title}
+                  </div>
+                </div>
+              </>
+            );
+          })}
           <div className={styles["slide-controls"]}>
             <img
               className={styles["left-button"]}

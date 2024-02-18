@@ -10,21 +10,21 @@ export const testimonials = [
     image: clientPic1,
   },
   {
-    index: 1,
+    index: 2,
     rating: 5,
     name: "John Doe",
     title: "Project Manager",
     feedback: "Incredible custom design! The team's dedication, creativity, and attention to detail exceeded our expectations. Highly recommend their top-notch service!",
-    image: "",
+    image: clientPic1,
 
   },
   {
-    index: 1,
+    index: 3,
     rating: 5,
-    name: "John Doe",
-    title: "Project Manager",
+    name: "Uncle Doe",
+    title: "Bus Driver",
     feedback: "Incredible custom design! The team's dedication, creativity, and attention to detail exceeded our expectations. Highly recommend their top-notch service!",
-    image: "",
+    image: clientPic1,
 
   },
 ]
