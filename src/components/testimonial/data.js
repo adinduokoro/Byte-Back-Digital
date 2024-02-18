@@ -18,4 +18,13 @@ export const testimonials = [
     image: "",
 
   },
+  {
+    index: 1,
+    rating: 5,
+    name: "John Doe",
+    title: "Project Manager",
+    feedback: "Incredible custom design! The team's dedication, creativity, and attention to detail exceeded our expectations. Highly recommend their top-notch service!",
+    image: "",
+
+  },
 ]
