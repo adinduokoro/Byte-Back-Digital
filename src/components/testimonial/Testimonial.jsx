@@ -13,11 +13,10 @@ const Testimonial = () => {
   const prevSlide = () => {
     setCurrentIndex(currentIndex === 0 ? length - 1 : currentIndex - 1);
   };
-  
+
   const nextSlide = () => {
     setCurrentIndex(currentIndex === length - 1 ? 0 : currentIndex + 1);
-  }
-
+  };
 
   return (
     <section className={styles.testimonial}>
@@ -36,23 +35,21 @@ const Testimonial = () => {
         <div className={styles.left}>
           {testimonials.map((testimonial, index) => {
             return (
-              <div className={styles.clientReview}>
-                <div className={styles.review}>
-                  <div className={styles.rating}>
-                    {(() => {
-                      const stars = [];
-                      const maxStars = Math.min(testimonial.rating, 5);
-                      for (let i = 0; i < maxStars; i++) {
-                        stars.push(
-                          <img className="star" src={star} alt="" key={i} />
-                        );
-                      }
-                      return stars;
-                    })()}
-                  </div>
-                  <div className={`${styles.feedback} subHead-text`}>
-                    {testimonial.feedback}
-                  </div>
+              <div className={styles.review}>
+                <div className={styles.rating}>
+                  {(() => {
+                    const stars = [];
+                    const maxStars = Math.min(testimonial.rating, 5);
+                    for (let i = 0; i < maxStars; i++) {
+                      stars.push(
+                        <img className="star" src={star} alt="" key={i} />
+                      );
+                    }
+                    return stars;
+                  })()}
+                </div>
+                <div className={`${styles.feedback} subHead-text`}>
+                  {testimonial.feedback}
                 </div>
                 <div className={styles.info}>
                   <div className={`${styles.name} title-text`}>
