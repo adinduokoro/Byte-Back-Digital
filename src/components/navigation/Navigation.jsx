@@ -1,13 +1,42 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import styles from "./Navigation.module.css";
 import logo from "../../assets/logo.svg";
 import menuToggle from "../../assets/menuToggle.svg";
 import { Link } from "react-router-dom";
 import { Icon } from "@iconify/react";
 import { navLinks } from "./data";
+import emailjs from "@emailjs/browser";
+import { toast } from "react-toastify";
 
 const Navigation = () => {
+  const form = useRef();
   const [isOpen, setIsOpen] = useState(false);
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const initialState = () => {
+    setName("");
+    setEmail("");
+    setMessage("");
+  };
+
+  async function sendEmail(e) {
+    e.preventDefault();
+    try {
+      const result = await emailjs.sendForm(
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
+        form.current,
+        process.env.REACT_APP_PUBLIC_KEY
+      );
+      initialState();
+      toast.success("Message Sent");
+    } catch (error) {
+      initialState();
+      toast.error(error);
+    }
+  }
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -28,7 +57,10 @@ const Navigation = () => {
             {navLinks.map((link, index) => {
               return (
                 <li className={`${styles.navLink} link-text`} key={index}>
-                  <Link to={link.path}> <strong>{link.name}</strong></Link>
+                  <Link to={link.path}>
+                    {" "}
+                    <strong>{link.name}</strong>
+                  </Link>
                 </li>
               );
             })}
@@ -51,22 +83,39 @@ const Navigation = () => {
               className={styles["close-icon"]}
               onClick={closeMenu}
             />
-            <form action="">
+            <form action="" ref={form} onSubmit={sendEmail}>
               <div className={`${styles["nav-header"]} title-text`}>
                 Book Appointment
               </div>
               <label>
                 <div className="body-text">Full Name:</div>
-                <input className="body-text" maxLength={25} type="text" />
+                <input
+                  className="body-text"
+                  name="name"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  maxLength={25}
+                  type="text"
+                />
               </label>
               <label>
                 <div className="body-text">Email:</div>
-                <input className="body-text" maxLength={25} type="email" />
+                <input
+                  className="body-text"
+                  name="name"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  maxLength={25}
+                  type="email"
+                />
               </label>
               <label>
                 <textarea
                   className="body-text"
                   type="message"
+                  name="message"
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
                   placeholder="Message:"
                   rows={4}
                   cols={40}

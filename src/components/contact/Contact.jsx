@@ -1,9 +1,41 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import styles from "./Contact.module.css";
 import arrow from "../../assets/arrow-right.svg";
 import { contacts } from "./data";
+import emailjs from "@emailjs/browser";
+import { toast } from "react-toastify";
 
 const Contact = () => {
+  const form = useRef();
+  const [name, setName] = useState("");
+  const [phone, setPhone] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const initialState = () => {
+    setName("");
+    setPhone("");
+    setEmail("");
+    setMessage("");
+  };
+
+  async function sendEmail(e) {
+    e.preventDefault();
+    try {
+      const result = await emailjs.sendForm(
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
+        form.current,
+        process.env.REACT_APP_PUBLIC_KEY
+      );
+      initialState();
+      toast.success("Message Sent");
+    } catch (error) {
+      initialState();
+      toast.error(error);
+    }
+  }
+
   return (
     <section className={styles.contact}>
       <div className={styles.left}>
@@ -35,7 +67,7 @@ const Contact = () => {
         </div>
       </div>
       <div className={styles.right}>
-        <form action="">
+        <form action="" ref={form} onSubmit={sendEmail}>
           <div className={styles["form-header"]}>
             <div className={`${styles["subHeading"]} subHead-text`}>
               <img className={styles.icon} src={arrow} alt="" />
@@ -50,30 +82,51 @@ const Contact = () => {
           </div>
           <label>
             <div className="body-text">Full Name:</div>
-            <input className="body-text" maxLength={25} type="text" />
+            <input
+              className="body-text"
+              name="name"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              maxLength={25}
+              type="text"
+            />
           </label>
           <label>
             <div className="body-text">Phone:</div>
-            <input className="body-text" maxLength={16} type="number" />
+            <input
+              className="body-text"
+              name="phone"
+              value={phone}
+              onChange={(e) => setPhone(e.target.value)}
+              maxLength={16}
+              type="number"
+            />
           </label>
           <label>
             <div className="body-text">Email:</div>
-            <input className="body-text" maxLength={50} type="email" />
+            <input
+              className="body-text"
+              name="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              maxLength={50}
+              type="email"
+            />
           </label>
 
           <label>
             <textarea
-            className="body-text"
-              type="email"
+              className="body-text"
+              name="message"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
               placeholder="Message:"
               rows={4}
               cols={40}
               maxLength={200}
             />
           </label>
-          <button className={`${styles.button} link-text` }>
-            Send Message
-          </button>
+          <button className={`${styles.button} link-text`}>Send Message</button>
         </form>
       </div>
     </section>
