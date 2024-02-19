@@ -12,13 +12,12 @@ const Testimonial = () => {
 
   const prevSlide = () => {
     setCurrentIndex(currentIndex === 0 ? length - 1 : currentIndex - 1);
-    console.log(currentIndex);
   };
-
+  
   const nextSlide = () => {
     setCurrentIndex(currentIndex === length - 1 ? 0 : currentIndex + 1);
-    console.log(currentIndex);
-  };
+  }
+
 
   return (
     <section className={styles.testimonial}>
@@ -74,9 +73,17 @@ const Testimonial = () => {
               alt=""
             />
             <div className={styles.index}>
-              <div className={styles.point}></div>
-              <div className={styles.point}></div>
-              <div className={styles.point}></div>
+              {testimonials.map((_, index) => (
+                <div
+                  className={
+                    currentIndex === index
+                      ? `${styles.point} ${styles["point-active"]}`
+                      : styles.point
+                  }
+                  onClick={() => setCurrentIndex(index)}
+                  key={index}
+                ></div>
+              ))}
             </div>
             <img
               className={styles["right-button"]}
