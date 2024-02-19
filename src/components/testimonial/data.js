@@ -1,4 +1,6 @@
-import clientPic1 from "../../assets/client-picture.png";
+import clientPic1 from "../../assets/client-picture1.png";
+import clientPic2 from "../../assets/client-picture2.jpg";
+import clientPic3 from "../../assets/client-picture3.jpg";
 
 export const testimonials = [
   {
@@ -17,7 +19,7 @@ export const testimonials = [
     title: "Project Manager",
     feedback:
       "Incredible custom design! The team's dedication, creativity, and attention to detail exceeded our expectations. Highly recommend their top-notch service!",
-    image: clientPic1,
+    image: clientPic2,
   },
   {
     index: 3,
@@ -26,6 +28,6 @@ export const testimonials = [
     title: "Bus Driver",
     feedback:
       "Incredible custom design! The team's dedication, creativity, and attention to detail exceeded our expectations. Highly recommend their top-notch service!",
-    image: clientPic1,
+    image: clientPic3,
   },
 ];
