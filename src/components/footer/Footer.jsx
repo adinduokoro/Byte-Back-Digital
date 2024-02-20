@@ -48,17 +48,20 @@ const Footer = () => {
             </div>
             <div className={styles["footer-bottom-left-bottom"]}>
               <div className={`${styles.email} body-text`}>
-                bytebackdigital@gmail.com
+                <a href="malito:">bytebackdigital@gmail.com</a>
+                
               </div>
               <div className={`${styles.phone} body-text`}>
-                +1 (800) 123 - 4567
+                <a href="tel:">+1 (800) 123 - 4567</a>
+                
               </div>
             </div>
           </div>
           <div className={styles["footer-bottom-right"]}>
             <div className={styles["footer-bottom-right-top"]}>
 
-              
+              <div className={styles["footer-bottom-right-top-content"]}>
+
               <div className={`${styles["quick-link"]} title-text`}>
                 Quick Links
               </div>
@@ -73,6 +76,7 @@ const Footer = () => {
                   );
                 })}
               </ul>
+              </div>
 
 
             </div>
