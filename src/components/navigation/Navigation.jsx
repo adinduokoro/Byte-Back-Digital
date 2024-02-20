@@ -70,13 +70,10 @@ const Navigation = () => {
           </div>
         </div>
       </div>
-      {/* Conditionally render overlay and menu */}
       {isOpen && (
         <>
-          {/* Overlay to close menu when clicked outside */}
           <div className={styles["toggle-overlay"]} onClick={closeMenu}></div>
 
-          {/* Menu content */}
           <div className={`${styles["toggle-menu"]}`}>
             <Icon
               icon="fa:close"
