@@ -7,11 +7,13 @@ export const contacts = [
     title: "Call Us",
     method: "Support",
     details: "1 (800) 123-4567",
+    href: "tel:",
   },
   {
     img: pencil,
     title: "Write Us",
     method: "Email",
     details: "example@gmail.com",
+    href: "mailto:"
   },
 ];

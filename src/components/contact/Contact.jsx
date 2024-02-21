@@ -55,7 +55,8 @@ const Contact = () => {
                   {contact.title}
                 </div>
                 <div className={`${styles.method} body-text`}>
-                  <span>{contact.method}:</span> {contact.details}
+                  <span>{contact.method}:</span> <a href={contact.href}>{contact.details}
+                    </a>
                 </div>
               </div>
             );
