@@ -4,13 +4,32 @@ import arrow from "../../assets/arrow-right.svg";
 import { contacts } from "./data";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+gsap.registerPlugin(ScrollTrigger);
 
 const Contact = () => {
+  const container = useRef();
   const form = useRef();
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+
+  useGSAP(() => {
+    gsap.from(["#subheading", "#heading"], {
+      opacity: 0,
+      y: 50,
+      stagger: 0.2,
+      scrollTrigger: {
+        trigger: ["#subheading", "#heading"],
+        scrub: 3,
+        start: "top 80%",
+        end: "top 80%",
+      }
+    })
+  },{scope: container})
 
   const initialState = () => {
     setName("");
@@ -37,13 +56,13 @@ const Contact = () => {
   }
 
   return (
-    <section className={styles.contact}>
+    <section className={styles.contact} ref={container}>
       <div className={styles.left}>
-        <div className={`${styles.subHeading} subHead-text`}>
+        <div className={`${styles.subHeading} subHead-text`} id="subheading">
           <img className={styles.icon} src={arrow} alt="" />
           Contact Us
         </div>
-        <div className={`${styles.heading} d-text`}>
+        <div className={`${styles.heading} d-text`} id="heading">
           Ready to Work <span>your</span> Next Project{" "}
         </div>
         <div className={styles.contacts}>
