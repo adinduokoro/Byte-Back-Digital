@@ -106,6 +106,10 @@ section {
   min-height: 57.75rem;
 }
 
+.half{
+  min-height: 28.875rem !important;
+}
+
 button {
   display: flex;
   justify-content: center;
