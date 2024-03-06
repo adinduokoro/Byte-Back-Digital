@@ -1,0 +1,26 @@
+.hostingCta {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    overflow: hidden;
+    border: 2px solid green;
+  
+  }
+
+.subHeading {
+  margin-bottom: 0.94rem;
+  padding-left: 2.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.31rem;
+  color: var(--primaryColorGreen);
+}
+
+.heading {
+  margin-bottom: 1.87rem;
+}
+
+.description {
+    margin-bottom: 0.94rem;
+    color: var(--text-color);
+  }
