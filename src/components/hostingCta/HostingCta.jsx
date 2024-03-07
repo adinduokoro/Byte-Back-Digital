@@ -15,16 +15,16 @@ const HostingCta = () => {
         </div>
         <div id="body">
           <div className={`${styles.description} body-text`}>
-            Embark on a digital journey where every pixel tells your story.
-            Merge custom web design with your brand's DNA to elevate your online
-            presence uniquely. Your vision and our precisely crafted code,
-            ensures distinction in every aspect. Choose us for a web experience
-            that goes beyond the ordinary.
+            Empower Your Business: Choose Our Premium Hosting for Expert Support
+            and Cutting-Edge Technology, Keeping Your Website Ahead!
           </div>
         </div>
+        <div className={styles.ctaButtons}>
+          <button className={`${styles.gsButton} body-text`} >Get Started</button>
+          <button className={`${styles.ppButton} body-text`}>Plan & Pricing</button>
+        </div>
       </div>
-      <div className={styles["cta-right"]}>
-      </div>
+      <div className={styles["cta-right"]}></div>
     </section>
   );
 };

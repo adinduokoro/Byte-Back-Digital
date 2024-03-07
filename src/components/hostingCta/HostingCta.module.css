@@ -1,11 +1,14 @@
 .hostingCta {
-    display: flex;
-    align-items: center;
-    gap: 3rem;
-    overflow: hidden;
-    border: 2px solid green;
-  
-  }
+  display: flex;
+  align-items: center;
+  gap: 4.75rem;
+  overflow: hidden;
+  border: 2px  green;
+}
+
+.cta-left {
+  max-width: 36.74rem;
+}
 
 .subHeading {
   margin-bottom: 0.94rem;
@@ -21,6 +24,35 @@
 }
 
 .description {
-    margin-bottom: 0.94rem;
-    color: var(--text-color);
-  }
+  margin-bottom: 0.94rem;
+  color: var(--text-color);
+}
+
+.ctaButtons{
+  display: flex;
+  gap: 2.4375rem;
+  margin-top: 1.88rem;
+}
+
+.gsButton,
+.ppButton{
+  border-radius: 3.125rem;
+  height: 4.375rem;
+  width: 17.1875rem;
+}
+
+.gsButton{
+  background: var(--primaryColorGreen);
+  color: var(--primaryColorBlack);
+}
+
+.ppButton{
+  border: 1.5px solid var(--text-color);
+  color: var(--text-color);
+}
+
+.cta-right{
+  width: 33.5rem;
+  border: 2px solid pink;
+  height: 25rem;
+}

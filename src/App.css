@@ -107,7 +107,11 @@ section {
 }
 
 .half{
-  min-height: 28.875rem !important;
+  min-height: 26rem !important;
+}
+
+.small{
+  min-height: 19.25rem !important;
 }
 
 button {
