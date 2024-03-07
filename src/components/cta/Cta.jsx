@@ -1,7 +1,6 @@
 import React, { useRef } from "react";
 import styles from "./Cta.module.css";
 import ctaImage from "../../assets/cta-img.png";
-import arrow from "../../assets/arrow-right.svg";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
@@ -48,7 +47,6 @@ const Cta = () => {
       </div>
       <div className={styles["cta-right"]} id="cta-right">
         <div className={`${styles.subHeading} subHead-text`} id="subheading">
-          <img className={styles.icon} src={arrow} alt="" />
           Our Company
         </div>
         <div className={`${styles.heading} d-text`} id="heading">

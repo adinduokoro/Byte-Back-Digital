@@ -1,6 +1,5 @@
 import React, { useRef, useState } from "react";
 import styles from "./Contact.module.css";
-import arrow from "../../assets/arrow-right.svg";
 import { contacts } from "./data";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
@@ -59,7 +58,6 @@ const Contact = () => {
     <section className={styles.contact} ref={container}>
       <div className={styles.left}>
         <div className={`${styles.subHeading} subHead-text`} id="subheading">
-          <img className={styles.icon} src={arrow} alt="" />
           Contact Us
         </div>
         <div className={`${styles.heading} d-text`} id="heading">
@@ -90,7 +88,6 @@ const Contact = () => {
         <form action="" ref={form} onSubmit={sendEmail}>
           <div className={styles["form-header"]}>
             <div className={`${styles["subHeading"]} subHead-text`}>
-              <img className={styles.icon} src={arrow} alt="" />
               Contact Us
             </div>
             <div

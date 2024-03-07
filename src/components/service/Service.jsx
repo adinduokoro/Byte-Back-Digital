@@ -1,6 +1,5 @@
 import React, { useRef } from "react";
 import styles from "../../components/service/Service.module.css";
-import arrow from "../../assets/arrow-right.svg";
 import { badges } from "./data";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
@@ -42,7 +41,6 @@ const Service = () => {
     <section className={styles.service} ref={container}>
       <div className={styles.header}>
         <div className={`${styles.subHeading} subHead-text`} id="subheading">
-          <img className={styles.icon} src={arrow} alt="" />
           Popular Services
         </div>
         <div className={`${styles.heading} d-text`} id="heading">

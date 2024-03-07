@@ -1,6 +1,5 @@
 import React, { useRef } from "react";
 import styles from "./Gallery.module.css";
-import arrow from "../../assets/arrow-right.svg";
 import { projects } from "./data";
 import linkicon from "../../assets/link-icon.svg";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -64,7 +63,6 @@ const Gallery = () => {
     <section className={styles.gallery} ref={container}>
       <div className={styles["gallery-header"]}>
         <div className={`${styles.subHeading} subHead-text`} id="subheading">
-          <img className={styles.icon} src={arrow} alt="" />
           Recent Works Gallery
         </div>
         <div className={styles["heading-content"]}>

@@ -1,13 +1,11 @@
 import React from "react";
 import styles from "./HostingCta.module.css";
-import arrow from "../../assets/arrow-right.svg";
 
 const HostingCta = () => {
   return (
     <section className={styles.hostingCta}>
       <div className={styles["cta-left"]}>
         <div className={`${styles.subHeading} subHead-text`} id="subheading">
-          <img className={styles.icon} src={arrow} alt="" />
           What We Offer
         </div>
         <div className={`${styles.heading} d-text`} id="heading">

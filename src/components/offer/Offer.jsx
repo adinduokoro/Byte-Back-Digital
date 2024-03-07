@@ -1,6 +1,5 @@
 import React, { useRef } from "react";
 import styles from "./Offer.module.css";
-import arrow from "../../assets/arrow-right.svg";
 import { cards } from "./data";
 import offerImage from "../../assets/offer-image.png";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -84,7 +83,6 @@ const Offer = () => {
       <div className={styles["offer-content"]}>
         <div className={styles.left}>
           <div className={`${styles.subHeading} subHead-text`} id="subheading">
-            <img className={styles.icon} src={arrow} alt="" />
             What We Do
           </div>
           <div className={`${styles.heading} d-text`} id="heading">

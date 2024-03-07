@@ -1,9 +1,15 @@
 import React from 'react'
 import styles from "./HostingPlans.module.css"
+import packages from "./data"
 
 const HostingPlans = () => {
   return (
-    <div className={styles.hostingPlans}>HostingPlans</div>
+    <section className={styles.hostingPlans}>
+      {/* header */}
+      {/* plans */}
+      {/* extra content */}
+      ho
+    </section>
   )
 }
 
