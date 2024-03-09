@@ -1,6 +1,7 @@
 .hero {
   position: relative;
 height: 90.5vh;
+padding: 0;
 }
 
 .hero-content {

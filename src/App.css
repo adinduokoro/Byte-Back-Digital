@@ -104,6 +104,7 @@ section {
   max-width: 75rem;
   margin: 0 auto;
   min-height: 57.75rem;
+  padding: 0 3%;
 }
 
 .xlg {
@@ -117,6 +118,8 @@ section {
 .small {
   min-height: 19.25rem !important;
 }
+
+
 
 button {
   display: flex;

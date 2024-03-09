@@ -4,7 +4,7 @@
   display: flex;
   z-index: 100;
   align-items: center;
-  justify-content: center;
+  
 }
 
 
@@ -16,6 +16,7 @@
   height: 6.25rem;
   transition: all .5s ease-in-out; 
   background: var(--primaryColorBlack);
+  padding: 0 3%;
 }
 
 .active{
@@ -128,4 +129,8 @@
 
 .nav-header {
   margin-bottom: 3.75rem;
+}
+
+@media screen and (max-width: ){
+
 }
