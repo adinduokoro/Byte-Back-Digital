@@ -1,6 +1,96 @@
-.hostingPlans{
-    border: 2px solid green;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.hostingPlans {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subHeading {
+  margin-bottom: 0.94rem;
+  display: flex;
+  align-items: center;
+  gap: 0.31rem;
+  color: var(--primaryColorGreen);
+}
+
+.heading {
+  text-align: center;
+  max-width: 43.125rem;
+  margin-bottom: 4.37rem;
+}
+
+.hostingOptions {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.package {
+  border: 2px solid green;
+  width: 23rem;
+  height: 46.875rem;
+  border: 1px solid var(--text-color);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform .25s ease-in-out; /* Added transition property */
+}
+
+.package:hover {
+  transform: scale(1.1); /* Changed scale to transform for transition */
+}
+
+.image {
+  width: 8.6875rem;
+  height: 6.6875rem;
+  margin-top: 0.81rem;
+  margin-bottom: 1.69rem;
+}
+
+.header-content {
+  gap: 0.31rem;
+  margin-bottom: 1.87rem;
+}
+
+.name {
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.desc {
+  color: var(--text-color);
+}
+
+.price {
+  margin-bottom: 1.88rem;
+}
+
+.perks {
+  display: flex;
+  flex-direction: column;
+  gap: 0.94rem;
+  color: var(--text-color);
+  margin-left: 0.38rem;
+}
+
+.planBtn {
+  margin-bottom: 1.87rem;
+  border-radius: 3.125rem;
+  background: var(--primaryColorGreen);
+  color: var(--primaryColorBlack);
+  display: flex;
+  width: 11rem;
+  height: 2.8125rem;
+  display: flex;
+  width: 11rem;
+  height: 2.8125rem;
+  font-size: 1.125rem;
+  font-weight: 400;
 }

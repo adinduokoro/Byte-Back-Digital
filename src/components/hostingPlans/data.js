@@ -1,7 +1,11 @@
+import cloud from "../../assets/cloud.svg"
+import shield from "../../assets/shield.svg"
+import rocket from "../../assets/rocket.svg"
+
 export const packages = [
   {
     id: 1,
-    image: "",
+    image: cloud,
     name: "LITE CLOUD",
     desc: "Best for average websites",
     price: 14.95,
@@ -37,8 +41,8 @@ export const packages = [
     ],
   },
   {
-    id: 1,
-    image: "",
+    id: 2,
+    image: shield,
     name: "PRO CLOUD ",
     desc: "Most popular package",
     price: 19.95,
@@ -86,8 +90,8 @@ export const packages = [
     ],
   },
   {
-    id: 1,
-    image: "",
+    id: 3,
+    image: rocket,
     name: "PREMIUM CLOUD",
     desc: "Ideal for eCommerce websites",
     price: 29.95,
