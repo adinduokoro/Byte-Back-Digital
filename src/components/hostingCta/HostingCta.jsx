@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./HostingCta.module.css";
+import image from "../../assets/hostingCtaImage.png"
 
 const HostingCta = () => {
   return (
@@ -22,7 +23,9 @@ const HostingCta = () => {
           <button className={`${styles.ppButton} body-text`}>Plan & Pricing</button>
         </div>
       </div>
-      <div className={styles["cta-right"]}></div>
+      <div className={styles["cta-right"]}>
+        <img src={image} alt="" />
+      </div>
     </section>
   );
 };

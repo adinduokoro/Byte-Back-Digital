@@ -26,6 +26,7 @@
 }
 
 .badges {
+  border: 2px solid green;
   display: flex;
   height: 17.4375rem;
   width: 100%;

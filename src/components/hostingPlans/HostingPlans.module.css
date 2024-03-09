@@ -31,7 +31,6 @@
 }
 
 .package {
-  border: 2px solid green;
   width: 23rem;
   height: 46.875rem;
   border: 1px solid var(--text-color);
@@ -44,7 +43,7 @@
 }
 
 .package:hover {
-  transform: scale(1.1); /* Changed scale to transform for transition */
+  transform: scale(1.05); /* Changed scale to transform for transition */
 }
 
 .image {
@@ -68,8 +67,29 @@
   color: var(--text-color);
 }
 
-.price {
+.price-content {
   margin-bottom: 1.88rem;
+  color: var(--text-color);
+  font-size: 0.875rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 1.9rem;
+}
+
+.dollar-sign{
+  justify-self: flex-start;
+  align-self: flex-start;
+}
+
+.price{
+  color: var(--primaryColorGreen);
+font-size: 2.25rem;
+font-weight: 700;
+}
+
+.rate{
+  align-self: flex-end;
 }
 
 .perks {
@@ -77,6 +97,10 @@
   flex-direction: column;
   gap: 0.94rem;
   color: var(--text-color);
+}
+
+.perk{
+  
   margin-left: 0.38rem;
 }
 
@@ -94,3 +118,25 @@
   font-size: 1.125rem;
   font-weight: 400;
 }
+
+.features {
+  margin-top: 2.80rem;
+  display: flex;
+  max-width: 735px;
+  justify-content: space-between;
+  gap: 20px;
+  font-size: 14px;
+  color: var(--text-color, #bfbfbf);
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.feature {
+  display: flex;
+  padding: 0
+}
+
+.featureDesc{
+  margin-left: 0.37rem;
+}
+

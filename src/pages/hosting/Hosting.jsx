@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from "../hosting/Hosting.module.css"
-import { DomainChecker, Header, HostingCta, HostingHero, HostingPlans } from '../../components'
+import { DomainChecker, Header, HostingCta, HostingFeatures, HostingHero, HostingPlans } from '../../components'
 
 const Hosting = () => {
   return (
@@ -10,6 +10,7 @@ const Hosting = () => {
       <DomainChecker />
       <HostingHero />
       <HostingPlans />
+      {/* <HostingFeatures /> */}
     </div>
   )
 }

@@ -60,7 +60,7 @@
 }
 
 .right {
-  border-radius: 1.25rem;
+  border-radius: 3rem;
   background-color: var(--ruler-color);
 }
 
@@ -75,8 +75,10 @@ form {
 }
 
 label {
+
   display: flex;
-  width: 23.8125rem;
+  max-width: 23.8125rem;
+  width: 100%;
   padding: 0.625rem 0.3125rem;
   align-items: center;
   gap: 0.625rem;

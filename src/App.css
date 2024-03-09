@@ -106,15 +106,15 @@ section {
   min-height: 57.75rem;
 }
 
-.xlg{
+.xlg {
   min-height: 72.1875rem;
 }
 
-.half{
+.half {
   min-height: 26rem !important;
 }
 
-.small{
+.small {
   min-height: 19.25rem !important;
 }
 
@@ -133,10 +133,10 @@ button {
   width: 14.375rem;
   height: 3.1875rem;
   font-weight: var(--font-bold) !important;
-  transition: all .25s ease-in-out;
+  transition: all 0.25s ease-in-out;
 }
 
-button:hover{
+button:hover {
   background-color: var(--primaryColorGreen);
   color: #000000;
 }
@@ -146,21 +146,19 @@ a {
   color: white;
 }
 
-a:visited{
+a:visited {
   color: white;
-
 }
 
 li {
   list-style: none;
 }
 
-input{
+input {
   box-sizing: border-box;
   outline: none;
   background: none;
   border: none;
-
 }
 
 textarea {
@@ -169,10 +167,9 @@ textarea {
   background: none;
   border: none;
   color: white;
-
 }
 
-textarea::placeholder{
+textarea::placeholder {
   color: white;
 }
 

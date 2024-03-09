@@ -9,6 +9,7 @@
 
 
 .nav-container {
+  border: 2px solid green;
   display: flex;
   position: fixed;
   width: 100%;
