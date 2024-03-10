@@ -99,11 +99,14 @@
   font-weight: var(--font-normal);
   margin-bottom: 0.94rem;
   color: var(--text-color);
-  width: 22rem;
+  max-width: 22rem;
+  width: 100%;
+
 }
 
 .horizontal-rule {
-  width: 22rem;
+  max-width: 22rem;
+  width: 100%;
   height: 0.0625rem;
   background: var(--marquee-text-color);
 }
@@ -114,5 +117,4 @@
 
 .offerImage {
   width: 100%;
-  transform: rotate
 }

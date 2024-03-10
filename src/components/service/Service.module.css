@@ -27,28 +27,28 @@
 }
 
 .badges {
-  border: 2px solid green;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   height: 17.4375rem;
   width: 100%;
   max-width: 58.4375rem;
-  justify-content: space-between;
+  gap: 3.75rem;
 }
 
 .badge {
   width: 15.3125rem;
-  height: 17.4375rem;
+  height: 12rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
 }
 
 .badgeImage {
+
   object-fit: contain;
-  margin-bottom: 1.875rem;
   transition: transform 0.3s ease;
-
-
 }
 
 .badgeImage:hover{
@@ -58,4 +58,5 @@
 .badge-title {
   font-weight: var(--font-medium);
   text-align: center;
+  height: 4rem;
 }
