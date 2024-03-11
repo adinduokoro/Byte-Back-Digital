@@ -32,8 +32,8 @@ const Gallery = () => {
           scrollTrigger: {
             trigger: "#gallery-container",
             scrub: 3,
-            start: "top 90%",
-            end: "50% 80%",
+            start: "top 95%",
+            end: "50% 95%",
           },
         });
         gsap.from(`.${styles.project}:nth-child(even)`, {
@@ -43,8 +43,8 @@ const Gallery = () => {
           scrollTrigger: {
             trigger: "#gallery-container",
             scrub: 3,
-            start: "top 80%",
-            end: "50% 80%",
+            start: "top 95%",
+            end: "25% 95%",
           },
         });
       }
