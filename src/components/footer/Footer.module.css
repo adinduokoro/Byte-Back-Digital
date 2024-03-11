@@ -37,7 +37,6 @@ footer {
 
 .footer-bottom-left {
   display: flex;
-  flex: 2;
   align-items: center;
   flex-direction: column;
   justify-content: center;
@@ -85,10 +84,6 @@ footer {
   border: 0.5px solid var(--primaryColorWhite);
 }
 
-.footer-bottom-right{
-  flex: 1;
-}
-
 
 .footer-bottom-right-top {
   display: flex;
@@ -122,4 +117,29 @@ footer {
 .footer-bottom-right-bottom span {
   color: var(--primaryColorGreen);
   font-weight: 700;
+}
+
+@media screen and (max-width: 901px) {
+  .footer-bottom {
+    flex-direction: column;
+  }
+
+  .footer-bottom-left {
+    height: 37.875rem;
+    border-bottom: 1px solid var(--text-color);
+  }
+
+  .footer-bottom-right-top {
+    text-align: center;
+    height: 20rem;
+  border-left: none;
+
+  }
+
+  .footer-bottom-right-bottom {
+    height: auto;
+    padding: 1.5rem;
+  border-left: none;
+
+  }
 }

@@ -28,6 +28,18 @@ const Contact = () => {
         end: "top 80%",
       }
     })
+    gsap.from("#contact-card", {
+      opacity: 0,
+      y: 50,
+      stagger: 0.2,
+      scale: 1.25,
+      scrollTrigger: {
+        trigger: ["#contact-card"],
+        scrub: 3,
+        start: "top 80%",
+        end: "top 80%",
+      }
+    })
   },{scope: container})
 
   const initialState = () => {
@@ -66,7 +78,7 @@ const Contact = () => {
         <div className={styles.contacts}>
           {contacts.map((contact, index) => {
             return (
-              <div className={styles["contact-card"]} key={index}>
+              <div className={styles["contact-card"]} key={index} id="contact-card">
                 <img src={contact.img} alt="" />
                 <div className={`${styles["contact-type"]} title-text`}>
                   {contact.title}

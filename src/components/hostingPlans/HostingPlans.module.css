@@ -124,7 +124,7 @@ font-weight: 700;
   display: flex;
   max-width: 735px;
   justify-content: space-between;
-  gap: 20px;
+  gap: 7.37rem;
   font-size: 14px;
   color: var(--text-color, #bfbfbf);
   font-weight: 400;
@@ -133,7 +133,7 @@ font-weight: 700;
 
 .feature {
   display: flex;
-  padding: 0
+  padding: 0;
 }
 
 .featureDesc{

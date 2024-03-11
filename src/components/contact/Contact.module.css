@@ -52,6 +52,7 @@
   font-weight: var(--font-medium);
   color: var(--text-color);
   text-align: center;
+  white-space: nowrap;
 }
 
 .method span {
@@ -113,4 +114,13 @@ textarea::placeholder {
 .button {
   background-color: var(--primaryColorGreen);
   color: var(--primaryColorBlack);
+}
+
+@media screen and (max-width: 981px){
+  .contact {
+flex-direction: column;
+padding: 7.69rem 0;
+  }
+
+
 }
