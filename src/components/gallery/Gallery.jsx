@@ -82,15 +82,15 @@ const Gallery = () => {
         {projects.map((project, index) => {
           return (
             <div
-              className={styles.project}
+              className={styles["project-card"]}
               key={index}
               onMouseLeave={() => handleMouseLeave(index)}
             >
               <div
-                className={styles["project-container"]}
+                className={styles["project-img-container"]}
                 id={`project-container-${index}`}
               >
-                <img src={project.image} alt="" />
+                <img src={project.imag} alt="" />
               </div>
               <div className={`${styles.title} title-text`}>
                 {project.title}
