@@ -29,8 +29,8 @@ const Service = () => {
       scrollTrigger: {
         trigger: ["#badge"],
         scrub: 3,
-        start: "top 80%",
-        end: "top 80%",
+        start: "top 90%",
+        end: "top 90%",
       }
     })
 

@@ -85,7 +85,7 @@
   border-radius: 3.125rem;
   border: 1px solid white;
   display: flex;
-  width: 2.1875rem;
+  min-width: 2.1875rem;
   height: 2.1875rem;
   justify-content: center;
   align-items: center;
@@ -117,4 +117,13 @@
 
 .offerImage {
   width: 100%;
+}
+
+@media screen and (max-width: 900px){
+.heading{
+  width: 80%;
+}
+.right{
+  display: none;
+}
 }

@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import styles from "./Gallery.module.css";
 import { projects } from "./data";
 import linkicon from "../../assets/link-icon.svg";
@@ -19,37 +19,40 @@ const Gallery = () => {
         scrollTrigger: {
           trigger: ["#subheading", "#heading"],
           scrub: 3,
-          start: "top 80%",
-          end: "top 80%",
-        },
-      });
-      gsap.from(`.${styles.project}:nth-child(odd)`, {
-        opacity: 0,
-        x: -150,
-        stagger: 0.2,
-        scrollTrigger: {
-          trigger: "#gallery-container",
-          scrub: 3,
-          start: "top 80%",
-          end: "50% 80%",
+          start: "top 90%",
+          end: "top 90%",
         },
       });
 
-      gsap.from(`.${styles.project}:nth-child(even)`, {
-        opacity: 0,
-        x: 150,
-        stagger: 0.2,
-        scrollTrigger: {
-          trigger: "#gallery-container",
-          scrub: 3,
-          start: "top 80%",
-          end: "50% 80%",
-        },
-      });
+      if (window.innerWidth > 768) {
+        gsap.from(`.${styles.project}:nth-child(odd)`, {
+          opacity: 0,
+          x: -150,
+          stagger: 0.2,
+          scrollTrigger: {
+            trigger: "#gallery-container",
+            scrub: 3,
+            start: "top 90%",
+            end: "50% 80%",
+          },
+        });
+        gsap.from(`.${styles.project}:nth-child(even)`, {
+          opacity: 0,
+          x: 150,
+          stagger: 0.2,
+          scrollTrigger: {
+            trigger: "#gallery-container",
+            scrub: 3,
+            start: "top 80%",
+            end: "50% 80%",
+          },
+        });
+      }
+      else{
+        // coming back, needs animation 
+      }
     },
-    {
-      scope: container,
-    }
+    { scope: container }
   );
 
   const handleMouseLeave = (index) => {

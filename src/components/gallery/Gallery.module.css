@@ -40,6 +40,7 @@
   max-width: 54.25rem;
   overflow: hidden;
 }
+
 .project {
   width: 24rem;
   height: 20.5rem;
@@ -54,11 +55,11 @@
 }
 
 .project-container::-webkit-scrollbar {
-  width: 0.5em; /* Adjust as needed */
+  width: 0.5em; 
 }
 
 .project-container::-webkit-scrollbar-thumb {
-  background-color: transparent; /* Hide the thumb */
+  background-color: transparent; 
 }
 
 .project-container img {
@@ -78,11 +79,29 @@
   height: 1.4375rem;
   cursor: pointer;
   transition: transform 0.3s ease;
-
 }
 
-.title img:hover{
+.title img:hover {
   transform: scale(1.25);
 }
 
+@media screen and (max-width: 855px) {
+  .gallery {
+    min-height: 85.12rem !important;
+  }
 
+  .gallery-container {
+    justify-content: space-around;
+    row-gap: 3.28rem;
+  }
+
+  .project {
+    width: 20.8rem;
+    height: 18rem;
+  }
+
+  .project-container {
+    height: 14.828125rem;
+    width: 21rem;
+  }
+}

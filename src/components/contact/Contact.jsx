@@ -24,8 +24,8 @@ const Contact = () => {
       scrollTrigger: {
         trigger: ["#subheading", "#heading"],
         scrub: 3,
-        start: "top 80%",
-        end: "top 80%",
+        start: "top 90%",
+        end: "top 90%",
       }
     })
     gsap.from("#contact-card", {
@@ -36,8 +36,8 @@ const Contact = () => {
       scrollTrigger: {
         trigger: ["#contact-card"],
         scrub: 3,
-        start: "top 80%",
-        end: "top 80%",
+        start: "top 90%",
+        end: "top 90%",
       }
     })
   },{scope: container})
