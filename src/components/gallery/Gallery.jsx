@@ -10,50 +10,50 @@ gsap.registerPlugin(ScrollTrigger);
 const Gallery = () => {
   const container = useRef();
 
-  useGSAP(
-    () => {
-      gsap.from(["#subheading", "#heading"], {
-        opacity: 0,
-        y: 50,
-        stagger: 0.2,
-        scrollTrigger: {
-          trigger: ["#subheading", "#heading"],
-          scrub: 3,
-          start: "top 90%",
-          end: "top 90%",
-        },
-      });
+  // useGSAP(
+  //   () => {
+  //     gsap.from(["#subheading", "#heading"], {
+  //       opacity: 0,
+  //       y: 50,
+  //       stagger: 0.2,
+  //       scrollTrigger: {
+  //         trigger: ["#subheading", "#heading"],
+  //         scrub: 3,
+  //         start: "top 90%",
+  //         end: "top 90%",
+  //       },
+  //     });
 
-      if (window.innerWidth > 768) {
-        gsap.from(`.${styles.project}:nth-child(odd)`, {
-          opacity: 0,
-          x: -150,
-          stagger: 0.2,
-          scrollTrigger: {
-            trigger: "#gallery-container",
-            scrub: 3,
-            start: "top 95%",
-            end: "50% 95%",
-          },
-        });
-        gsap.from(`.${styles.project}:nth-child(even)`, {
-          opacity: 0,
-          x: 150,
-          stagger: 0.2,
-          scrollTrigger: {
-            trigger: "#gallery-container",
-            scrub: 3,
-            start: "top 95%",
-            end: "25% 95%",
-          },
-        });
-      }
-      else{
-        // coming back, needs animation 
-      }
-    },
-    { scope: container }
-  );
+  //     if (window.innerWidth > 768) {
+  //       gsap.from(`.${styles.project}:nth-child(odd)`, {
+  //         opacity: 0,
+  //         x: -150,
+  //         stagger: 0.2,
+  //         scrollTrigger: {
+  //           trigger: "#gallery-container",
+  //           scrub: 3,
+  //           start: "top 95%",
+  //           end: "50% 95%",
+  //         },
+  //       });
+  //       gsap.from(`.${styles.project}:nth-child(even)`, {
+  //         opacity: 0,
+  //         x: 150,
+  //         stagger: 0.2,
+  //         scrollTrigger: {
+  //           trigger: "#gallery-container",
+  //           scrub: 3,
+  //           start: "top 95%",
+  //           end: "25% 95%",
+  //         },
+  //       });
+  //     }
+  //     else{
+  //       // coming back, needs animation 
+  //     }
+  //   },
+  //   { scope: container }
+  // );
 
   const handleMouseLeave = (index) => {
     const projectContainer = container.current.querySelector(
@@ -90,7 +90,7 @@ const Gallery = () => {
                 className={styles["project-img-container"]}
                 id={`project-container-${index}`}
               >
-                <img src={project.imag} alt="" />
+                <img className={styles.image} src={project.image} alt="" />
               </div>
               <div className={`${styles.title} title-text`}>
                 {project.title}

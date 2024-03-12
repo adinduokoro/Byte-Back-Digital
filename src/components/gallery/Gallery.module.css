@@ -1,10 +1,9 @@
-/* .gallery {
+.gallery {
   min-height: 115.5rem !important;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  align-items: center;
 }
 
 .gallery-header {
@@ -23,8 +22,8 @@
 .heading-content {
   display: flex;
   justify-content: space-between;
-  gap: 5rem;
   margin-bottom: 4.375rem;
+  gap: 3.125rem;
 }
 
 .heading {
@@ -37,48 +36,43 @@
 }
 
 .gallery-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  min-height: 70.25rem;
+  gap: 3.125rem;
   align-items: center;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  row-gap: 4.375rem;
-  max-width: 54.25rem;
-
-  
 }
 
-.project {
+.project-card {
   width: 24rem;
 }
 
-.project-container {
+.project-img-container {
+  width: 24rem;
   height: 16.9375rem;
-  width: 24rem;
   overflow: auto;
   scroll-behavior: smooth;
-  margin-bottom: 0.9375rem;
+  margin-bottom: 0.94rem;
 }
 
-.project-container::-webkit-scrollbar {
+.project-img-container::-webkit-scrollbar {
   width: 0.5em;
 }
 
-.project-container::-webkit-scrollbar-thumb {
+.project-img-container::-webkit-scrollbar-thumb {
   background-color: transparent;
 }
 
-.project-container img {
+.image {
   width: 100%;
   object-fit: cover;
 }
 
 .title {
   font-weight: var(--font-medium);
-  border: 2px solid yellow;
   display: flex;
   align-items: center;
   justify-content: space-between;
-
 }
 
 .title img {
@@ -92,44 +86,3 @@
   transform: scale(1.25);
 }
 
-@media screen and (max-width: 855px) {
-  .gallery {
-    min-height: 85.12rem !important;
-  }
-
-  .gallery-container {
-    row-gap: 3.28rem;
-    width: 100%;
-  }
-
-  .project {
-    width: 20.8rem;
-    height: 18rem;
-  }
-
-  .project-container {
-    height: 14.828125rem;
-    width: 21rem;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .gallery {
-    min-height: 150rem !important;
-  }
-
-  .gallery-container {
-    flex-direction: column;
-    gap: 4.375rem;
-  }
-
-  .project {
-    width: 23rem;
-    height: 21rem;
-    height: auto;
-  }
-
-  .project-container {
-    width: 30rem;
-  }
-} */
