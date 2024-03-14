@@ -143,3 +143,15 @@ footer {
 
   }
 }
+
+@media screen and (max-width: 768px) {
+  .footer-socials{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 692px) {
+  .footer-bottom-left-bottom{
+    flex-direction: column;
+  }
+}
