@@ -86,3 +86,34 @@
   transform: scale(1.25);
 }
 
+@media screen and (max-width: 938px) {
+  .gallery{
+    padding-top: 15.19rem;
+    padding-bottom: 15.19rem;
+  }
+
+  .gallery-container {
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+  }
+
+  .project-card:nth-child(odd),
+  .project-card:nth-child(even){
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+  }
+
+  .project-card:nth-child(odd) {
+    justify-self: start;
+    
+  }
+  
+  .project-card:nth-child(even) {
+    justify-self: end;
+    flex-direction: row-reverse;
+    
+  }
+}
