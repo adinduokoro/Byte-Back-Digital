@@ -8,7 +8,7 @@ const Home = () => {
       <Hero />
       <Cta />
       <Offer />
-      <Service />
+      <Service /> 
       <Gallery />
       <Testimonial />
       <Contact />
