@@ -77,16 +77,16 @@ const Hero = () => {
     <section className={styles.hero} ref={container}>
       <div className={styles["hero-content"]}>
         <div className={styles["hero-logo"]}>
-          <div className={styles.text} style={{ marginLeft: "0" }}>
+          <div className={styles.textOne} >
             <div id="web-text">W</div>
             <div id="web-text">E</div>
             <div id="web-text">B</div>
           </div>
-          <div className={styles.text} style={{ marginLeft: "8.69rem" }}>
+          <div className={styles.textTwo} >
             <div id="de">D</div>
             <div id="de">E</div>
           </div>
-          <div className={styles.text} style={{ marginLeft: "16.06rem" }}>
+          <div className={styles.textThree} >
             <div id="sig">S</div>
             <div id="sig">I</div>
             <div id="sig">G</div>
@@ -94,9 +94,9 @@ const Hero = () => {
 
           <div className={styles["text-content"]}>
             <div className={styles.bar} id="bar">
-              <div className={styles.tag}>COMPANY</div>
+              {/* <div className={styles.tag}>COMPANY</div> */}
             </div>
-            <div className={styles.text} id="n-text">
+            <div className={styles.textFour} id="n-text">
               N
             </div>
           </div>

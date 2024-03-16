@@ -9,7 +9,7 @@
   width: 100%;
 }
 
-.cta-left{
+.cta-left {
   flex: 1;
 }
 
@@ -44,4 +44,16 @@
   text-decoration: underline;
   color: var(--text-color);
   cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+  .cta {
+    flex-direction: column-reverse;
+    padding-top: 9.5rem;
+    padding-bottom: 9.5rem;
+  }
+
+  .cta-right {
+max-width: 32rem;
+  }
 }
