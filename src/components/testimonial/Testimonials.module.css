@@ -159,4 +159,17 @@
   .review {
     margin-bottom: 0rem;  
   }
+
+  .feedback{
+    max-width: 20rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+
+.right{
+  height: 18rem;
+  width: 18rem;
+}
 }

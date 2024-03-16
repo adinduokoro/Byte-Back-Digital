@@ -119,8 +119,6 @@
 }
 
 @media screen and (max-width: 738px) {
-  .project-card{
-  }
 
   .project-card:nth-child(odd),
   .project-card:nth-child(even){
@@ -137,5 +135,10 @@
     scroll-behavior: smooth;
     margin-bottom: 0.94rem;
   }
+
+  .button{
+    display: none;
+  }
+
 }
 

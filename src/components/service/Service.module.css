@@ -4,7 +4,6 @@
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  border: 3px solid mediumturquoise;
 }
 
 .header {
@@ -63,5 +62,13 @@
 }
 
 @media screen and (max-width: 568px) {
-  
+  .service{
+    padding-top: 6.655rem;
+    padding-bottom: 6.655rem;
+  }
+
+  .badges{
+    height: auto;
+    flex-direction: column;
+  }
 }
