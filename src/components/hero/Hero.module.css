@@ -176,7 +176,7 @@
 
 @media screen and (max-height: 600px ) {
   .hero-logo {
-    width: 13.5rem;
+    width: 13.25rem;
     height: 14.8125rem;
   }
 
@@ -197,6 +197,10 @@
     margin-left: 6.36rem;
   }
 
+  .text-content {
+    gap: .5rem;
+  }
+
   .bar {
     height: 3.3625rem;
   }
@@ -205,9 +209,8 @@
 
 @media screen and (max-height: 425px) {
   .hero-logo {
-    width: 7.25rem;
+    width: 6.70rem;
     height: 7.8125rem;
-    border: 5px solid teal;
   }
 
   .textOne,
@@ -224,6 +227,10 @@
   }
   .textThree {
     margin-left: 3.25rem;
+  }
+
+  .text-content {
+    gap: .25rem;
   }
 
   .bar {
