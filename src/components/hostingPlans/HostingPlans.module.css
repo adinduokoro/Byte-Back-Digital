@@ -31,8 +31,9 @@
 }
 
 .package {
-  width: 23rem;
-  height: 46.875rem;
+  max-width: 24rem;
+  flex: 1;
+  min-height: 46.875rem;
   border: 1px solid var(--text-color);
   display: flex;
   justify-content: space-between;
@@ -84,8 +85,8 @@
 
 .price{
   color: var(--primaryColorGreen);
-font-size: 2.25rem;
-font-weight: 700;
+  font-size: 2.25rem;
+  font-weight: 700;
 }
 
 .rate{
@@ -100,7 +101,6 @@ font-weight: 700;
 }
 
 .perk{
-  
   margin-left: 0.38rem;
 }
 
@@ -112,17 +112,14 @@ font-weight: 700;
   display: flex;
   width: 11rem;
   height: 2.8125rem;
-  display: flex;
-  width: 11rem;
-  height: 2.8125rem;
   font-size: 1.125rem;
   font-weight: 400;
+  margin-top: 0.94rem;
 }
 
 .features {
   margin-top: 2.80rem;
   display: flex;
-  max-width: 735px;
   justify-content: space-between;
   gap: 7.37rem;
   font-size: 14px;
