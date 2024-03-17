@@ -98,6 +98,7 @@ body {
   background-color: var(--primaryColorBlack);
   color: var(--primaryColorWhite);
   scroll-behavior: smooth;
+  min-width: 425px;
 }
 
 section {

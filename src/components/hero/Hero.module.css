@@ -1,6 +1,6 @@
 .hero {
   position: relative;
-  height: 90.5vh;
+  min-height: 88.5vh;
   padding: 0;
 }
 
@@ -108,7 +108,7 @@
 
 @media screen and (max-width: 600px) {
   .hero-logo {
-    width: 23.8125rem;
+    width: 23.5rem;
     height: 24.8125rem;
   }
 
@@ -119,6 +119,7 @@
     font-size: 7rem;
     font-weight: 500;
     line-height: 5.6875rem; /* 86.875% */
+
   }
 
   .textTwo {
@@ -143,3 +144,90 @@
     transform: rotate(-90deg);
   } */
 }
+
+@media screen and (max-height: 800px ) {
+  .hero-logo {
+    width: 23.5rem;
+    height: 24.8125rem;
+  }
+
+  .textOne,
+  .textTwo,
+  .textThree,
+  .textFour {
+    font-size: 7rem;
+    line-height: 5.6875rem; /* 86.875% */
+  font-weight: 700;
+
+  }
+
+  .textTwo {
+    margin-left: 6.29rem;
+  }
+  .textThree {
+    margin-left: 11.36rem;
+  }
+
+  .bar {
+    height: 5.2625rem;
+  }
+
+}
+
+@media screen and (max-height: 600px ) {
+  .hero-logo {
+    width: 13.5rem;
+    height: 14.8125rem;
+  }
+
+  .textOne,
+  .textTwo,
+  .textThree,
+  .textFour {
+    font-size: 4rem;
+    line-height: 3.1435rem; /* 86.875% */
+  font-weight: 700;
+
+  }
+
+  .textTwo {
+    margin-left: 3.39rem;
+  }
+  .textThree {
+    margin-left: 6.36rem;
+  }
+
+  .bar {
+    height: 3.3625rem;
+  }
+
+}
+
+@media screen and (max-height: 425px) {
+  .hero-logo {
+    width: 7.25rem;
+    height: 7.8125rem;
+    border: 5px solid teal;
+  }
+
+  .textOne,
+  .textTwo,
+  .textThree,
+  .textFour {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.3435rem; /* 86.875% */
+  }
+
+  .textTwo {
+    margin-left: 1.79rem;
+  }
+  .textThree {
+    margin-left: 3.25rem;
+  }
+
+  .bar {
+    height: 1.6625rem;
+  }
+}
+

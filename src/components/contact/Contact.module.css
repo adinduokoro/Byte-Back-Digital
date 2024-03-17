@@ -2,11 +2,7 @@
   display: flex;
   align-items: center;
   gap: 2.8rem;
-  padding: 0 3%;
-}
-
-.left{
-  flex: 2;
+  
 }
 
 .subHeading {
@@ -24,6 +20,7 @@
   font-style: italic;
   font-weight: 500;
   line-height: 120%;
+  flex: 2;
 }
 
 .contacts {
@@ -42,7 +39,7 @@
 
 .contact-card img {
   margin-bottom: 1.88rem;
-
+  
 }
 
 .contact-type {
@@ -124,6 +121,13 @@ padding: 7.69rem 3%;
   }
 }
 
-@media screen and (max-width: 425px) {
-  /* work on here  */
+@media screen and (max-width: 500px) {
+.contacts{
+  flex-direction: column;
+  overflow: hidden;
+}
+
+form {
+  max-width: none;
+}
 }
