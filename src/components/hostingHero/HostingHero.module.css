@@ -1,9 +1,12 @@
 .hostingHero {
   position: relative;
+  overflow: hidden;
 }
 
 .heroImg {
-  width: 57.375rem;
+  padding-left: 3rem;
+  max-width: 57.375rem;
+  width: 100%;
   height: 28.875rem;
   position: absolute;
   object-fit: cover;

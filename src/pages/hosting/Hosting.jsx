@@ -8,8 +8,8 @@ const Hosting = () => {
       <Header headerTitle={"Web Hosting"}/>
       <HostingCta/>
       <DomainChecker />
-      {/* <HostingHero />
-      <HostingPlans /> */}
+      <HostingHero />
+      <HostingPlans />
       {/* <HostingFeatures /> */}
     </div>
   )

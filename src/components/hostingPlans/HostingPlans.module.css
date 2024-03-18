@@ -28,15 +28,16 @@
 .hostingOptions {
   display: flex;
   gap: 1.5rem;
+  width: 100%;
 }
 
 .package {
-  max-width: 24rem;
   flex: 1;
   min-height: 46.875rem;
   border: 1px solid var(--text-color);
   display: flex;
   justify-content: space-between;
+  padding: 0.5rem;
   flex-direction: column;
   align-items: center;
   text-align: center;
@@ -105,7 +106,7 @@
 }
 
 .planBtn {
-  margin-bottom: 1.87rem;
+  margin-bottom: 0.935rem;
   border-radius: 3.125rem;
   background: var(--primaryColorGreen);
   color: var(--primaryColorBlack);
@@ -120,9 +121,9 @@
 .features {
   margin-top: 2.80rem;
   display: flex;
-  justify-content: space-between;
-  gap: 7.37rem;
-  font-size: 14px;
+  justify-content: space-around;
+  width: 100%;
+  font-size: 0.875rem;
   color: var(--text-color, #bfbfbf);
   font-weight: 400;
   white-space: nowrap;
@@ -135,5 +136,9 @@
 
 .featureDesc{
   margin-left: 0.37rem;
+}
+
+@media screen and (max-width: 718px) {
+  
 }
 
