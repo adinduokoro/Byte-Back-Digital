@@ -1,13 +1,13 @@
 .hostingCta {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 4.75rem;
   overflow: hidden;
-  border: 2px  green;
 }
 
-.cta-left {
-  max-width: 36.74rem;
+.cta-left{
+  flex: 1;
 }
 
 .subHeading {
@@ -36,9 +36,7 @@
 
 .gsButton,
 .ppButton{
-  border-radius: 3.125rem;
-  height: 4.375rem;
-  width: 17.1875rem;
+  max-width: 17.1875rem !important;
 }
 
 .gsButton{
@@ -52,6 +50,28 @@
 }
 
 .cta-right{
-  width: 33.5rem;
-  height: 25rem;
+  flex: 1;
 }
+
+.cta-image{
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .hostingCta{
+    flex-direction: column;
+
+  }
+
+  .cta-left{
+    flex: 0;
+  }
+
+  .cta-right{
+    flex: 0;
+  }
+}
+
+

@@ -20,3 +20,14 @@
   font-weight: var(--font-medium);
   line-height: 173.75%;
 }
+
+@media screen and (max-width: 596px){
+  .header-title{
+    z-index: 5;
+    font-size: 3.5rem;
+    color: var(--primaryColorWhite);
+    align-items: center;
+    font-weight: var(--font-medium);
+    line-height: 173.75%;
+  }
+}

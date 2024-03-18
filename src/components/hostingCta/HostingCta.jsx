@@ -24,7 +24,7 @@ const HostingCta = () => {
         </div>
       </div>
       <div className={styles["cta-right"]}>
-        <img src={image} alt="" />
+        <img className={styles["cta-image"]} src={image} alt="" />
       </div>
     </section>
   );
