@@ -4,7 +4,6 @@
 }
 
 .marquee {
-  
   width: 100%;
   min-height: 11.55rem;
   display: flex;
@@ -81,6 +80,22 @@
   margin-bottom: 1.88rem;
 }
 
+.card:hover .horizontal-rule {
+  background: var(--primaryColorGreen);
+  transition: background-color 0.5s;
+}
+
+.card:hover .card-index {
+  border: 2px solid var(--primaryColorGreen);
+  transition: border-color 0.5s;
+}
+
+.card:hover .card-header {
+  color: var(--primaryColorGreen);
+  transition: color 0.5s;
+}
+
+
 .card-index {
   border-radius: 3.125rem;
   border: 1px solid white;
@@ -95,13 +110,13 @@
   font-weight: var(--font-medium);
   margin-bottom: 0.94rem;
 }
+
 .card-body {
   font-weight: var(--font-normal);
   margin-bottom: 0.94rem;
   color: var(--text-color);
   max-width: 22rem;
   width: 100%;
-
 }
 
 .horizontal-rule {
@@ -120,12 +135,12 @@
 }
 
 @media screen and (max-width: 900px){
-.heading{
-  width: 80%;
-}
-.right{
-  display: none;
-}
+  .heading{
+    width: 80%;
+  }
+  .right{
+    display: none;
+  }
 }
 
 @media screen and (max-width: 600px) {

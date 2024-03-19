@@ -49,7 +49,7 @@ const Gallery = () => {
   //       });
   //     }
   //     else{
-  //       // coming back, needs animation 
+  //       // coming back, needs animation
   //     }
   //   },
   //   { scope: container }
@@ -94,7 +94,9 @@ const Gallery = () => {
               </div>
               <div className={`${styles.title} title-text`}>
                 {project.title}
-                <img src={linkicon} alt="" />
+                <a target="_blank" href={project.link}>
+                  <img src={linkicon} alt="" />
+                </a>
               </div>
             </div>
           );

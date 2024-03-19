@@ -60,10 +60,9 @@ const Cta = () => {
             ensures distinction in every aspect. Choose us for a web experience
             that goes beyond the ordinary.
           </div>
-          <div className={`${styles.label} label-text`}>
-            {/* icon */}
+          {/* <div className={`${styles.label} label-text`}>
             Read More
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
