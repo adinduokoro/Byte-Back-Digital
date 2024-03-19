@@ -14,7 +14,8 @@ function App() {
           <Route path="hosting" element={<Hosting />} />
           <Route path="contact" element={<Contact />} />
           <Route path="admin" element={<Admin />} />
-          <Route path="*" element={<NoPage />} />
+          <Route path="*" element={<Home />} />
+          {/* Will change back to NoPage ^^^ */}
         </Route>
       </Routes>
     </div>
