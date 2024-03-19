@@ -7,6 +7,7 @@ import { Icon } from "@iconify/react";
 import { navLinks } from "./data";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
+import hosting from "../../assets/hosting.svg";
 
 const Navigation = () => {
   const form = useRef();
@@ -53,7 +54,7 @@ const Navigation = () => {
           <Link to="/">
             <img className={styles.logo} src={logo} alt="logo" />
           </Link>
-          <ul className={styles.navLinks}>
+          {/* <ul className={styles.navLinks}>
             {navLinks.map((link, index) => {
               return (
                 <li className={`${styles.navLink} link-text`} key={index}>
@@ -64,9 +65,15 @@ const Navigation = () => {
                 </li>
               );
             })}
-          </ul>
-          <div className={styles.menuToggle} onClick={toggleMenu}>
-            <img className={styles.toggle} src={menuToggle} alt="menu" />
+          </ul> */}
+          {/* CLOSED */}
+          <div className={styles["menu-tools"]}>
+            <div className={styles.menuToggle} onClick={toggleMenu}>
+              <img className={styles.toggle} src={menuToggle} alt="menu" />
+            </div>
+            <Link to="/hosting">
+              <img className={styles.hostingIcon} src={hosting} alt="" />
+            </Link>
           </div>
         </div>
       </div>
