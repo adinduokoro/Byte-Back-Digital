@@ -82,6 +82,7 @@ footer {
   gap: 0.9375rem;
   border-radius: 3.125rem;
   border: 0.5px solid var(--primaryColorWhite);
+  cursor: pointer;
 }
 
 
