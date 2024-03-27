@@ -5,7 +5,9 @@ import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
+
 import gsap from "gsap";
+import { socialPlatforms } from "../footer/data";
 gsap.registerPlugin(ScrollTrigger);
 
 const Contact = () => {
@@ -16,31 +18,34 @@ const Contact = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  useGSAP(() => {
-    gsap.from(["#subheading", "#heading"], {
-      opacity: 0,
-      y: 50,
-      stagger: 0.2,
-      scrollTrigger: {
-        trigger: ["#subheading", "#heading"],
-        scrub: 3,
-        start: "top 90%",
-        end: "top 90%",
-      }
-    })
-    gsap.from("#contact-card", {
-      opacity: 0,
-      y: 50,
-      stagger: 0.2,
-      scale: 1.25,
-      scrollTrigger: {
-        trigger: ["#contact-card"],
-        scrub: 3,
-        start: "top 90%",
-        end: "top 90%",
-      }
-    })
-  },{scope: container})
+  useGSAP(
+    () => {
+      gsap.from(["#subheading", "#heading"], {
+        opacity: 0,
+        y: 50,
+        stagger: 0.2,
+        scrollTrigger: {
+          trigger: ["#subheading", "#heading"],
+          scrub: 3,
+          start: "top 90%",
+          end: "top 90%",
+        },
+      });
+      gsap.from("#contact-card", {
+        opacity: 0,
+        y: 50,
+        stagger: 0.2,
+        scale: 1.25,
+        scrollTrigger: {
+          trigger: ["#contact-card"],
+          scrub: 3,
+          start: "top 90%",
+          end: "top 90%",
+        },
+      });
+    },
+    { scope: container }
+  );
 
   const initialState = () => {
     setName("");
@@ -78,14 +83,18 @@ const Contact = () => {
         <div className={styles.contacts}>
           {contacts.map((contact, index) => {
             return (
-              <div className={styles["contact-card"]} key={index} id="contact-card">
+              <div
+                className={styles["contact-card"]}
+                key={index}
+                id="contact-card"
+              >
                 <img src={contact.img} alt="" />
                 <div className={`${styles["contact-type"]} title-text`}>
                   {contact.title}
                 </div>
                 <div className={`${styles.method} body-text`}>
-                  <span>{contact.method}:</span> <a href={contact.href}>{contact.details}
-                    </a>
+                  <span>{contact.method}:</span>{" "}
+                  <a href={contact.href}>{contact.details}</a>
                 </div>
               </div>
             );
@@ -93,7 +102,15 @@ const Contact = () => {
         </div>
         <div className={styles.socials}>
           <div className={`${styles["follow-us"]} title-text`}>Follow Us</div>
-          Links
+          <div className={styles["social-links"]}>
+            {socialPlatforms.map((social, index) => {
+              return (
+                <div className={styles["logo-link"]}>
+                  <img src={social.logo} alt={social.name} key={index} />
+                </div>
+              );
+            })}
+          </div>
         </div>
       </div>
       <div className={styles.right}>
