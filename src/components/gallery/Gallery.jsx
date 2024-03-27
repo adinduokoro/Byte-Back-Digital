@@ -72,9 +72,9 @@ const Gallery = () => {
           <div className={`${styles.heading} d-text`} id="heading">
             Take a Look at Our Recent Project Gallery
           </div>
-          <button className={`${styles.button} link-text`}>
+          {/* <button className={`${styles.button} link-text`}>
             View More Projects
-          </button>
+          </button> */}
         </div>
       </div>
 
