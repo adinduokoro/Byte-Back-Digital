@@ -66,6 +66,18 @@ display: flex;
 gap: 0.62rem;
 }
 
+.logo-link{
+  cursor: pointer;
+  transform: scale(1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.logo-link:hover{
+  transform: scale(1.2);
+}
+
+
+
 .right {
   flex: 1;
   border-radius: 3rem;
