@@ -26,7 +26,7 @@ const HostingPlans = () => {
 
   return (
     <section className={`${styles.hostingPlans} xlg`}>
-      <div className={styles.header}>
+      <div className={styles.header} >
         <div className={`${styles.subHeading} subHead-text`} id="subheading">
           Perfect hosting for your next site
         </div>

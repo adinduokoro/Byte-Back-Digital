@@ -21,7 +21,7 @@ const Footer = () => {
             {socialPlatforms.map((social, index) => {
               return (
                 <li className={`${styles.social} body-text`} key={index}>
-                  <a href={social.link} target="_blank">{social.name}</a>
+                  <a href={social.link} target="_blank" rel="noreferrer">{social.name}</a>
                 </li>
               );
             })}
