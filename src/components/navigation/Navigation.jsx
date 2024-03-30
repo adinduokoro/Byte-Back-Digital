@@ -72,7 +72,10 @@ const Navigation = () => {
               <img className={styles.toggle} src={menuToggle} alt="menu" />
             </div>
             <Link to="/hosting">
-              <img className={styles.hostingIcon} src={hosting} alt="" />
+              <div className={`${styles["hosting-btn"]}`}>
+                <img className={styles.hostingIcon} src={hosting} alt="" />
+                <p>Try our Hosting</p>
+              </div>
             </Link>
           </div>
         </div>

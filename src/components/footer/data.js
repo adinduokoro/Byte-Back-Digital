@@ -5,23 +5,23 @@ import instagramIcon from "../../assets/instagram-icon.svg";
 
 export const socialPlatforms = [
   {
-    name: "facebook",
+    name: "Facebook",
     logo: facebookIcon,
-    link: "www.facebook.com",
+    link: "https://www.facebook.com/",
   },
   {
-    name: "twitter",
+    name: "Twitter",
     logo: twitterIcon,
-    link: "www.twitter.com",
+    link: "https://www.twitter.com",
   },
   {
-    name: "instagram",
+    name: "Instagram",
     logo: instagramIcon,
-    link: "www.instagram.com",
+    link: "https://www.instagram.com",
   },
   {
-    name: "linkedin",
+    name: "Linkedin",
     logo: linkedinIcon,
-    link: "www.linkedin.com",
+    link: "https://www.linkedin.com",
   },
 ];

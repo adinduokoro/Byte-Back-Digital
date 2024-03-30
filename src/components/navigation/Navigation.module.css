@@ -73,11 +73,19 @@
   cursor: pointer;
 }
 
+.hosting-btn{
+  display: flex;
+  margin-right: 1.88rem;
+  align-items: center;
+  justify-content: center;
+  gap: 0.1875rem;
+  animation: scaleIcon 1s infinite alternate;
+
+}
+
 .hostingIcon {
   width: 2rem;
   height: 2rem;
-  margin-right: 1.88rem;
-  animation: scaleIcon 1s infinite alternate;
 }
 
 @keyframes scaleIcon {
@@ -85,7 +93,7 @@
     scale: 1;
   }
   100% {
-    scale: 1.2;
+    scale: 1.1;
   }
 }
 

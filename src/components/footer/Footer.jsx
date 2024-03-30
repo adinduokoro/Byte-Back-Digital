@@ -4,6 +4,7 @@ import logo from "../../assets/logo.svg";
 import img from "../../assets/footer-img.png";
 import { Link } from "react-router-dom";
 import { navLinks } from "../navigation/data";
+import { socialPlatforms } from "./data";
 
 const Footer = () => {
   const date = new Date();
@@ -17,22 +18,13 @@ const Footer = () => {
             <img className={styles.logo} src={logo} alt="" />
           </Link>
           <ul className={styles["footer-socials"]}>
-            <li className={`${styles.social} body-text`}>
-              <img src="" alt="" />
-              Facebook
-            </li>
-            <li className={`${styles.social} body-text`}>
-              <img src="" alt="" />
-              Twitter
-            </li>
-            <li className={`${styles.social} body-text`}>
-              <img src="" alt="" />
-              LinkedIn
-            </li>
-            <li className={`${styles.social} body-text`}>
-              <img src="" alt="" />
-              Instagram
-            </li>
+            {socialPlatforms.map((social, index) => {
+              return (
+                <li className={`${styles.social} body-text`} key={index}>
+                  <a href={social.link} target="_blank">{social.name}</a>
+                </li>
+              );
+            })}
           </ul>
         </div>
         <div className={styles["footer-bottom"]}>
