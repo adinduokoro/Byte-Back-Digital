@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./HostingPlans.module.css";
 import { packages } from "./data";
 
-const HostingPlans = () => {
+const HostingPlans = ({ forwardedRef }) => {
   const features = [
     {
       id: "1",
@@ -25,7 +25,7 @@ const HostingPlans = () => {
   ];
 
   return (
-    <section className={`${styles.hostingPlans} xlg`}>
+    <section className={`${styles.hostingPlans} xlg`} ref={forwardedRef}>
       <div className={styles.header} >
         <div className={`${styles.subHeading} subHead-text`} id="subheading">
           Perfect hosting for your next site

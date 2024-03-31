@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./HostingCta.module.css";
 import image from "../../assets/hostingCtaImage.png"
 
-const HostingCta = () => {
+const HostingCta = ({ scrollToHostingPlans }) => {
   return (
     <section className={styles.hostingCta}>
       <div className={styles["cta-left"]}>
@@ -19,8 +19,10 @@ const HostingCta = () => {
           </div>
         </div>
         <div className={styles.ctaButtons}>
-          <button className={`${styles.gsButton} body-text`} >Get Started</button>
-          <button className={`${styles.ppButton} body-text`}>Plan & Pricing</button>
+        <button className={`${styles.gsButton} body-text`} onClick={scrollToHostingPlans}>
+          Get Started
+        </button>
+          <button className={`${styles.ppButton} body-text`} onClick={scrollToHostingPlans}>Plan & Pricing</button>
         </div>
       </div>
       <div className={styles["cta-right"]}>
