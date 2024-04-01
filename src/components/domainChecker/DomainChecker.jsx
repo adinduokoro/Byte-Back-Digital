@@ -47,9 +47,10 @@ const DomainChecker = () => {
       <div className={styles["search-content"]}>
       <input 
         type="text" 
-        className={styles.search} 
+        className={`${styles.search} title-text`} 
         value={query} 
-        onChange={(e) => setQuery(e.target.value)} 
+        onChange={(e) => setQuery(e.target.value)}
+        maxLength={50} 
       />
       <button 
         className={`${styles["search-btn"]} body-text`} 
