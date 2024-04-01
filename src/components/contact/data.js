@@ -6,14 +6,14 @@ export const contacts = [
     img: phone,
     title: "Call Us",
     method: "Support",
-    details: "1 (800) 123-4567",
-    href: "tel:",
+    details: "1 (470) 222-5985",
+    href: "tel:+14702225985",
   },
   {
     img: pencil,
     title: "Write Us",
     method: "Email",
-    details: "example@gmail.com",
-    href: "mailto:"
+    details: "bytebackdigital@gmail.com",
+    href: "mailto:bytebackdigital@gmail.com"
   },
 ];

@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import styles from "./Testimonials.module.css";
-import clientPic from "../../assets/client-picture1.png";
 import star from "../../assets/star-bold.svg";
 import leftBtn from "../../assets/left-vector.svg";
 import rightBtn from "../../assets/right-vector.svg";
