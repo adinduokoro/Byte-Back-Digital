@@ -1,7 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./DomainChecker.module.css";
 
 const DomainChecker = () => {
+  const [query, setQuery] = useState('');
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    // Open a new tab/window with the search results
+    window.open(`https://bytebackdigital.com/billing/cart.php?a=add&domain=register&query=${query}`, '_blank');
+  };
+
   const prices = [
     {
       domain: ".com",
@@ -36,10 +44,20 @@ const DomainChecker = () => {
         <div className={`${styles.heading} d-text`}>Search Your Domain Name</div>
       </div>
       <div className={styles.right}>
-        <div className={styles["search-content"]}>
-          <input type="text" className={styles.search} />
-          <button className={`${styles["search-btn"]} body-text`}>Check</button>
-        </div>
+      <div className={styles["search-content"]}>
+      <input 
+        type="text" 
+        className={styles.search} 
+        value={query} 
+        onChange={(e) => setQuery(e.target.value)} 
+      />
+      <button 
+        className={`${styles["search-btn"]} body-text`} 
+        onClick={handleSubmit}
+      >
+        Check
+      </button>
+    </div>
         <div className={styles.prices}>
           {prices.map((price, index) => {
             return(

@@ -6,6 +6,7 @@ export const packages = [
   {
     id: 1,
     image: cloud,
+    link: "https://bytebackdigital.com/billing/index.php?rp=/store/cloud-hosting/lite-cloud",
     name: "LITE CLOUD",
     desc: "Best for average websites",
     price: 14.95,
@@ -43,6 +44,7 @@ export const packages = [
   {
     id: 2,
     image: shield,
+    link: "https://bytebackdigital.com/billing/index.php?rp=/store/cloud-hosting/pro-cloud",
     name: "PRO CLOUD ",
     desc: "Most popular package",
     price: 19.95,
@@ -92,6 +94,7 @@ export const packages = [
   {
     id: 3,
     image: rocket,
+    link: "https://bytebackdigital.com/billing/index.php?rp=/store/cloud-hosting/premium-cloud",
     name: "PREMIUM CLOUD",
     desc: "Ideal for eCommerce websites",
     price: 29.95,

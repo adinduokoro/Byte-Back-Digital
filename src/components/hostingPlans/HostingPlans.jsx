@@ -26,7 +26,7 @@ const HostingPlans = ({ forwardedRef }) => {
 
   return (
     <section className={`${styles.hostingPlans} xlg`} ref={forwardedRef}>
-      <div className={styles.header} >
+      <div className={styles.header}>
         <div className={`${styles.subHeading} subHead-text`} id="subheading">
           Perfect hosting for your next site
         </div>
@@ -61,7 +61,14 @@ const HostingPlans = ({ forwardedRef }) => {
                 </div>
               </div>
               <div className={styles.bottom}>
-                <button className={styles.planBtn}>Get Started</button>
+                <div className={styles.bottom}>
+                  <button
+                    className={styles.planBtn}
+                    onClick={() => window.open(`${plan.link}`, "_blank")}
+                  >
+                    Get Started
+                  </button>
+                </div>
               </div>
             </div>
           );
