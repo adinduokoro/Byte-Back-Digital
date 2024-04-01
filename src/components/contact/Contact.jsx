@@ -129,6 +129,7 @@ const Contact = () => {
           <label>
             <div className="body-text">Full Name:</div>
             <input
+              required
               className="body-text"
               name="name"
               value={name}
@@ -140,6 +141,7 @@ const Contact = () => {
           <label>
             <div className="body-text">Phone:</div>
             <input
+              required
               className="body-text"
               name="phone"
               value={phone}
@@ -151,6 +153,7 @@ const Contact = () => {
           <label>
             <div className="body-text">Email:</div>
             <input
+              required
               className="body-text"
               name="email"
               value={email}
@@ -162,6 +165,7 @@ const Contact = () => {
 
           <label>
             <textarea
+              required
               className="body-text"
               name="message"
               value={message}

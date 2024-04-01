@@ -32,6 +32,7 @@ const Navigation = () => {
         process.env.REACT_APP_PUBLIC_KEY
       );
       initialState();
+      setIsOpen(false);
       toast.success("Message Sent");
     } catch (error) {
       initialState();
@@ -98,7 +99,8 @@ const Navigation = () => {
                 <div className="body-text">Full Name:</div>
                 <input
                   className="body-text"
-                  name="name"
+                  name="navName"
+                  required
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   maxLength={25}
@@ -109,7 +111,8 @@ const Navigation = () => {
                 <div className="body-text">Email:</div>
                 <input
                   className="body-text"
-                  name="name"
+                  name="navEmail"
+                  required
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   maxLength={25}
@@ -120,7 +123,8 @@ const Navigation = () => {
                 <textarea
                   className="body-text"
                   type="message"
-                  name="message"
+                  name="navMessage"
+                  required
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
                   placeholder="Message:"
