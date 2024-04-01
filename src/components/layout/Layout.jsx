@@ -5,8 +5,7 @@ import { Outlet } from "react-router-dom";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import { ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+
 gsap.registerPlugin(ScrollTrigger);
 
 const Layout = () => {
@@ -31,7 +30,6 @@ const Layout = () => {
 
   return (
     <div ref={container}>
-      <ToastContainer />
       <div ref={navigation}>
         <Navigation />
       </div>

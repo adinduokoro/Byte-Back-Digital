@@ -178,6 +178,10 @@ textarea::placeholder {
   color: white;
 }
 
+.Toastify__close-button{
+  display: none;
+}
+
 /* FOR DESKTOP DEVICES */
 @media screen and (max-width: 1200px) {
   :root {
