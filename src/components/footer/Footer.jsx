@@ -40,10 +40,10 @@ const Footer = () => {
             </div>
             <div className={styles["footer-bottom-left-bottom"]}>
               <div className={`${styles.email} body-text`}>
-                <a href="malito:">bytebackdigital@gmail.com</a>
+                <a href="malito:bytebackdigital@gmail.com">bytebackdigital@gmail.com</a>
               </div>
               <div className={`${styles.phone} body-text`}>
-                <a href="tel:">+1 (800) 123 - 4567</a>
+                <a href="tel:+14702225985">+1 (470) 222-5985</a>
               </div>
             </div>
           </div>

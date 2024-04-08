@@ -1,33 +1,33 @@
-import clientPic1 from "../../assets/client-picture1.png";
-import clientPic2 from "../../assets/client-picture2.jpg";
+import clientPic1 from "../../assets/client-picture1.jpg";
+import clientPic2 from "../../assets/client-picture2.jpeg";
 import clientPic3 from "../../assets/client-picture3.jpg";
 
 export const testimonials = [
   {
-    index: 1,
-    rating: 5,
-    name: "Jane Doe",
-    title: "CEO & Founder",
-    feedback:
-      "Incredible custom design! The team's dedication, creativity, and attention to detail exceeded our expectations. Highly recommend their top-notch service!",
-    image: clientPic1,
-  },
-  {
     index: 2,
     rating: 3,
-    name: "John Doe",
-    title: "Project Manager",
+    name: "Izzy I.",
+    title: "Nail Tech",
     feedback:
-      "Incredible custom design! The team's dedication, creativity, and attention to detail exceeded our expectations. Highly recommend their top-notch service!",
+      "My nail business flourished online thanks to Byte Back Digital. Thank You!",
     image: clientPic2,
+  },
+  {
+    index: 1,
+    rating: 5,
+    name: "Liam E",
+    title: "Dropshipping",
+    feedback:
+      "The web design company transformed my dropshipping venture, driving sales with a website that accurately depicts my brand!",
+    image: clientPic1,
   },
   {
     index: 3,
     rating: 4,
-    name: "Uncle Doe",
-    title: "Bus Driver",
+    name: "Kim P",
+    title: "Hair Stylist/Boutique Owner",
     feedback:
-      "Incredible custom design! The team's dedication, creativity, and attention to detail exceeded our expectations. Highly recommend their top-notch service!",
+      "My whole business runs on the e-commerce website Byte made. From booking to closing orders. Wonderful job.",
     image: clientPic3,
   },
 ];

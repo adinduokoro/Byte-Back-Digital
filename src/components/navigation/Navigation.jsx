@@ -21,7 +21,6 @@ const Navigation = () => {
     setEmail("");
     setMessage("");
   };
-
   async function sendEmail(e) {
     e.preventDefault();
     try {
