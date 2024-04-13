@@ -2,6 +2,7 @@
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://bytebackdigital.com/",
   "dependencies": {
     "@emailjs/browser": "^4.1.0",
     "@gsap/react": "^2.1.0",

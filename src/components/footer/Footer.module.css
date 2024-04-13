@@ -23,6 +23,7 @@ footer {
 .footer-socials {
   display: flex;
   gap: 3.62rem;
+  display: none;
 }
 
 .social {
